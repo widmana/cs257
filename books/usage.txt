@@ -1,0 +1,31 @@
+NAME
+       search - the stupid searcher
+
+SYNOPSIS
+       search [--book_title] [--book_year] [--author] [--year]
+
+DESCRIPTION ##ARE THESE COMMANDS MUTUALLY EXCLUSIVE? ARE THEY AN ARGUMENT IN THE SEARCH COMMAND?
+    [--book_title]: Given a search string S, print a list of books whose titles contain S 
+    (case-insensitive). Books are sorted by title.
+
+    [--book_year]: Given a search string S, print a list of books whose titles contain S 
+    (case-insensitive). Books are sorted by publication year.
+    
+    [--author]: Given a search string S, print a list of authors whose names contain S 
+    (case-insensitive). For each such author, print a list of the author's books. 
+    Authors should be printed in alphabetical order by surname, breaking ties by 
+    using given name (e.g. Ann Brontë comes before Charlotte Brontë).
+    
+    [--year]: Given a range of years A to B, print a list of books published between years A 
+    and B, inclusive. Books should be printed in order of publication year.
+
+
+NAME
+       man - the stupid manual
+
+SYNOPSIS
+       man
+
+DESCRIPTION
+       Use this command line to search the database through the command "search"
+       followed by any of the following arguments; [--book] [--author] [--year].
