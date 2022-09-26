@@ -3,6 +3,8 @@
     booksdatasource.py
     Jeff Ondich, 21 September 2022
 
+    Alex Widman
+    Serafin Patino
     For use in the "books" assignment at the beginning of Carleton's
     CS 257 Software Design class, Fall 2022.
 '''
@@ -34,8 +36,40 @@ class Book:
             thing as "same book". '''
         return self.title == other.title
 
-class BooksDataSource:
+class BooksDataSource: 
     def __init__(self, books_csv_file_name):
+        with open(books_csv_file_name, 'r') as csv_file:
+                csv_reader = csv.reader(csv_file)
+                for line in csv_reader:
+                    title = line[0]
+                    publication_year = line[1]
+                    rest = line[2]
+                    separation = rest.split(" and ")
+                    for i in separation:
+                        individual = i.split(" ")
+                        print(individual)
+                        for i in individual:
+                            firstname = i[0]
+                            if len(i) == 4:
+                                lastname = i[1] + i[2]
+                                date = i[3]
+                            else:
+                                lastname = i[1]
+                                date = i[2]
+                            dates = date.split("-")
+
+                    
+        
+        # file = open(books_csv_file_name, 'r')
+        # for line in file:
+        #     line = file.readline()
+        #     if line[0] == '"':
+        #         split = line.split('",')
+        #         title = split[0]
+        #         print(title)
+
+            # else:
+            #     pass
         ''' The books CSV file format looks like this:
 
                 title,publication_year,author_description
@@ -86,3 +120,8 @@ class BooksDataSource:
         '''
         return []
 
+def main():
+    testing = BooksDataSource("books1.csv")
+
+if __name__ == "__main__":
+    main()
