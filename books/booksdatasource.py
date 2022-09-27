@@ -11,12 +11,15 @@
 
 import csv
 
+from pyrsistent import s
+
 class Author:
-    def __init__(self, surname='', given_name='', birth_year=None, death_year=None):
+    def __init__(self, surname='', given_name='', birth_year=None, death_year=None, books=[]):
         self.surname = surname
         self.given_name = given_name
         self.birth_year = birth_year
         self.death_year = death_year
+        self.books = books
 
     def __eq__(self, other):
         ''' For simplicity, we're going to assume that no two authors have the same name. '''
@@ -37,52 +40,63 @@ class Book:
         return self.title == other.title
 
 class BooksDataSource: 
-    def __init__(self, books_csv_file_name):
+    ''' The books CSV file format looks like this:
+
+            title,publication_year,author_description
+
+        For example:
+
+            All Clear,2010,Connie Willis (1945-)
+            "Right Ho, Jeeves",1934,Pelham Grenville Wodehouse (1881-1975)
+
+        This __init__ method parses the specified CSV file and creates
+        suitable instance variables for the BooksDataSource object containing
+        a collection of Author objects and a collection of Book objects.
+    '''
+    our_books = []
+    our_authors = []    #we can do this right
+
+    def __init__(self, books_csv_file_name): 
         with open(books_csv_file_name, 'r') as csv_file:
                 csv_reader = csv.reader(csv_file)
                 for line in csv_reader:
                     title = line[0]
                     publication_year = line[1]
                     rest = line[2]
-                    separation = rest.split(" and ")
-                    for i in separation:
-                        individual = i.split(" ")
-                        print(individual)
-                        for i in individual:
-                            firstname = i[0]
-                            if len(i) == 4:
-                                lastname = i[1] + i[2]
-                                date = i[3]
-                            else:
-                                lastname = i[1]
-                                date = i[2]
-                            dates = date.split("-")
+                    individuals = rest.split(" and ")
+                    list_of_authors = []
+                    for i in individuals:
+                        components = i.split(" ")
+                        firstname = components[0]
+                        if len(components) == 4:
+                            lastname = components[1] + i[2]
+                            date_range = components[3]
+                        else:
+                            lastname = components[1]
+                            date_range = components[2]
+                        dates = date_range.split("-")
+                        birth_year = (dates[0])[1:]
+                        death_year = (dates[1])[:-1]  #may have to change this, right now death_year when still alive is ""
+                        list_of_titles = []
+                        this_author = Author(lastname, firstname, birth_year, death_year, list_of_titles)
+                        if this_author in BooksDataSource.our_authors:
+                            found_index = BooksDataSource.our_authors.index(this_author)
+                            this_list_of_titles = BooksDataSource.our_authors[found_index].books
+                            this_list_of_titles.append(title)
+                            new_this_author = Author(lastname, firstname, birth_year, death_year, this_list_of_titles)
+                            BooksDataSource.our_authors.append(new_this_author)    #updates values with a new appended list of titles
+                        else:
+                            list_of_titles.append(title)
+                            BooksDataSource.our_authors.append(this_author)         #appends the authors list with a new author
+                        list_of_authors.append(this_author)
+                    this_book = Book(title, publication_year, list_of_authors)
+                    BooksDataSource.our_books.append(this_book)
 
-                    
-        
-        # file = open(books_csv_file_name, 'r')
-        # for line in file:
-        #     line = file.readline()
-        #     if line[0] == '"':
-        #         split = line.split('",')
-        #         title = split[0]
-        #         print(title)
+                    for this_book in BooksDataSource.our_books:
+                        print(this_book.title, this_book.publication_year)
 
-            # else:
-            #     pass
-        ''' The books CSV file format looks like this:
-
-                title,publication_year,author_description
-
-            For example:
-
-                All Clear,2010,Connie Willis (1945-)
-                "Right Ho, Jeeves",1934,Pelham Grenville Wodehouse (1881-1975)
-
-            This __init__ method parses the specified CSV file and creates
-            suitable instance variables for the BooksDataSource object containing
-            a collection of Author objects and a collection of Book objects.
-        '''
+                    for this_author in BooksDataSource.our_authors:
+                        print(this_author.surname, this_author.books)
         pass
 
     def authors(self, search_text=None):
@@ -91,7 +105,24 @@ class BooksDataSource:
             returns all of the Author objects. In either case, the returned list is sorted
             by surname, breaking ties using given name (e.g. Ann Brontë comes before Charlotte Brontë).
         '''
-        return []
+        if search_text == None:
+            return BooksDataSource.our_authors
+        else:
+            specified_author_list = []
+            for i in BooksDataSource.our_authors:
+                if search_text in i.surname or i.firstname:
+                    specified_author_list.append(i)
+            for j in specified_author_list:
+                pass
+            return []
+    
+    def alphabetsort (self, word1, word2):
+        if word1 > word2:
+            return 1
+        elif word2 > word1:
+            return 2
+        else:
+            return 0
 
     def books(self, search_text=None, sort_by='title'):
         ''' Returns a list of all the Book objects in this data source whose
@@ -122,6 +153,7 @@ class BooksDataSource:
 
 def main():
     testing = BooksDataSource("books1.csv")
+    testing2 = testing.authors("Orenstein")
 
 if __name__ == "__main__":
     main()
