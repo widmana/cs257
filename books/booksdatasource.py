@@ -175,7 +175,5 @@ def main():
     testing = BooksDataSource("duplicatebooks.csv")
     testing2 = testing.books("Dogs", 'year')
 
- 
-
 if __name__ == "__main__":
     main()
