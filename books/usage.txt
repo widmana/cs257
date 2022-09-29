@@ -1,6 +1,3 @@
-NAME
-     booksearch – prints a list of books whose titles contain S (case-insensitive)
-
 SYNOPSIS
      python3 books.py booksearch [--h] [ --t | --y] <string>
      python3 books.py authorsearch [--h] <string>

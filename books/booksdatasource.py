@@ -80,25 +80,26 @@ class BooksDataSource:
                     individuals = rest.split(" and ")
                     list_of_authors = []
                     for i in individuals:
-                        components = i.split(" ")
+                        components = i.split(" ")                    
                         if len(components) == 4:
-                            lastname = components[1] + i[2]
+                            surname = components[1] + i[2]
                             date_range = components[3]
                         else:
-                            lastname = components[1]
+                            surname = components[1]
                             date_range = components[2]
-                        firstname = components[0] 
+                        given_name = components[0]                
                         dates = date_range.split("-")
                         birth_year = (dates[0])[1:]
                         death_year = (dates[1])[:-1]
-
                         list_of_titles = []
-                        this_author = Author(lastname, firstname, birth_year, death_year, list_of_titles)
+                        this_author = Author(surname, given_name, birth_year, death_year, list_of_titles)
+            
+
                         if this_author in BooksDataSource.our_authors:      #this is doubling the authors
                             found_index = BooksDataSource.our_authors.index(this_author)
                             this_list_of_titles = BooksDataSource.our_authors[found_index].books
                             this_list_of_titles.append(title)
-                            new_this_author = Author(lastname, firstname, birth_year, death_year, this_list_of_titles)
+                            new_this_author = Author(surname, given_name, birth_year, death_year, this_list_of_titles)
                             del BooksDataSource.our_authors[found_index]
                             BooksDataSource.our_authors.append(new_this_author)    #updates values with a new appended list of titles
                         else:
@@ -110,6 +111,9 @@ class BooksDataSource:
                 
                 # for this_book in BooksDataSource.our_books:
                 #     print(this_book.title, this_book.publication_year)
+                #     testing_authors = this_book.authors
+                #     for i in testing_authors:
+                #         print(i.surname, i.given_name)
 
                 # for this_author in BooksDataSource.our_authors:
                 #     print(this_author.given_name, this_author.books)      
@@ -169,11 +173,26 @@ class BooksDataSource:
             during start_year should be included. If both are None, then all books
             should be included.
         '''
-        return []
+        specified_books_list = []
+        if start_year == 'None' and end_year == 'None':
+            return BooksDataSource.our_books
+        elif start_year == 'None':
+             for i in BooksDataSource.our_books:
+                if int(i.publication_year) <= int(end_year):
+                    specified_books_list.append(i)
+                else:
+                    pass
+        elif end_year == 'None':
+                for i in BooksDataSource.our_books:
+                    if int(i.publication_year) >= int(start_year):
+                        specified_books_list.append(i)
+                    else:
+                        pass           
+        else:
+            for i in BooksDataSource.our_books:
+                if int(i.publication_year) >= int(start_year) and int(i.publication_year) <= int(end_year):
+                    specified_books_list.append(i)
+                else:
+                    pass
+        return sorted(specified_books_list, key = lambda b: (b.publication_year, b.title))
 
-def main():
-    testing = BooksDataSource("duplicatebooks.csv")
-    testing2 = testing.books("Dogs", 'year')
-
-if __name__ == "__main__":
-    main()
