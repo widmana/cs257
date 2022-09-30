@@ -22,6 +22,9 @@ class Author:
     def __eq__(self, other):
         ''' For simplicity, we're going to assume that no two authors have the same name. '''
         return self.surname == other.surname and self.given_name == other.given_name
+
+    def __repr__(self):
+        return self.surname +  " " + self.given_name
     
     def __lt__(self, other):
         if self.surname < other.surname:
@@ -38,6 +41,13 @@ class Book:
         self.title = title
         self.publication_year = publication_year
         self.authors = authors
+
+    def __repr__(self):
+        return self.title
+    
+
+    # def __str__(self):
+    #     return self.title
 
     def __eq__(self, other):
         ''' We're going to make the excessively simplifying assumption that
@@ -92,7 +102,7 @@ class BooksDataSource:
                         birth_year = (dates[0])[1:]
                         death_year = (dates[1])[:-1]
                         list_of_titles = []
-                        this_author = Author(surname, given_name, birth_year, death_year, list_of_titles)
+                        this_author = Author(surname, given_name, birth_year, death_year, list_of_titles) # fullname parameter??
             
 
                         if this_author in BooksDataSource.our_authors:      #this is doubling the authors
@@ -132,6 +142,8 @@ class BooksDataSource:
             for i in BooksDataSource.our_authors:
                 if search_text in i.surname or search_text in i.given_name:
                     specified_author_list.append(i)
+                elif search_text in (i.surname + " " + i.given_name): # todo: make user able to lookup by fullname. Make the inner () into variable
+                    specified_author_list.append(i)
                 else:
                     pass
             return sorted(specified_author_list)
@@ -153,11 +165,14 @@ class BooksDataSource:
         else:
             specified_books_list = []
             for i in BooksDataSource.our_books:
+                # print(i.publication_year)
                 if search_text in i.title:
                     specified_books_list.append(i)
-                else:
-                    pass
-            if sort_by == 'year':        
+                elif search_text in i.publication_year:
+                    specified_books_list.append(i)
+                # else:
+                #     pass
+            if sort_by == 'year':       
                 return sorted(specified_books_list, key = lambda b: (b.publication_year, b.title))
             else:
                 return sorted(specified_books_list, key = lambda b: (b.title, b.publication_year))
