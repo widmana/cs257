@@ -21,7 +21,6 @@ def main():
     command = sys.argv[1]
     # all the indexes were off by 1 since he first sysargv idx was the file name
     # added __repr__ into booksearch and author search, it returns the string form of an object
-    print(command)
     if command == 'booksearch':     #books(self, search_text=None, sort_by='title'):
         if len(sys.argv) == 3 and sys.argv[2] == '--h':
             print("booksearch  <string>  Prints a list of books whose titles contain string (case-insensitive). ")
@@ -42,7 +41,7 @@ def main():
         for i in list:
             print(i.title, i.publication_year, end = "")
             for j in i.authors:
-                print(j.given_name, i.surname, i.birth_year, i.death_year)
+                print(",", j)
     
     elif  command == 'authorsearch':            #def authors(self, search_text=None):
         if len(sys.argv) == 4 and sys.argv[2] == '-h':
@@ -57,9 +56,9 @@ def main():
         else:
             print("Your command was in valid, please try again :,(")
         for i in list:
-            print(i.given_name, i.surname, i.birth_year, i.death_year, end = "")
+            print(i.given_name, i.surname, i.birth_year, "-", i.death_year, end = ":")
             for j in i.books:
-                print(j.title, j.publication_year)
+                print(j, end = ", ")
 
     
     elif command == 'yearsearch':               #def books_between_years(self, start_year=None, end_year=None):
@@ -75,21 +74,22 @@ def main():
                 try:
                     value = int(start_year)
                 except ValueError:
-                    value = start_year + ' value is not an Integer'
-                return value
+                    print("This is not a valid year")
+                    exit()
             if end_year != 'None':
                 try:
                     value = int(end_year)
                 except ValueError:
-                    value = end_year + ' value is not an Integer'
-                return value
-            list = allbooks.books_between_years(start_year, end_year)
+                    print("This is not a valid year")
+                    exit()
+            else:
+                list = allbooks.books_between_years(start_year, end_year)
         else:
             print('Your command was invalid, please try again :(')
         for i in list:
-            print(i.title, i.publication_year, end = "")
+            print(i.title, i.publication_year, end = ": ")
             for j in i.authors:
-                print(j.given_name, i.surname, i.birth_year, i.death_year)
+                print(j)
 
 if __name__ == "__main__":
     main()
