@@ -30,15 +30,19 @@ def main():
             print("or by publication year from most rrrecent to least recent.")
         elif len(sys.argv) == 4 and sys.argv[2] == '--t':
             string = sys.argv[3]
-            print(allbooks.books(string))
+            list = (allbooks.books(string))
         elif len(sys.argv) == 3:
             string = sys.argv[2]
-            print(allbooks.books(string))
+            list = (allbooks.books(string))
         elif len(sys.argv) == 4 and sys.argv[2] == '--y':
             string = sys.argv[3]  
-            print(allbooks.books(string, 'year'))
+            list = (allbooks.books(string, 'year'))
         else:
             print("Your command was not valid, try again! :(")
+        for i in list:
+            print(i.title, i.publication_year, end = "")
+            for j in i.authors:
+                print(j.given_name, i.surname, i.birth_year, i.death_year)
     
     elif  command == 'authorsearch':            #def authors(self, search_text=None):
         if len(sys.argv) == 4 and sys.argv[2] == '-h':
@@ -49,9 +53,14 @@ def main():
             print("Prints the synopsis and a list of the options for the authorsearch function.")
         elif len(sys.argv) == 3:
             string = sys.argv[2]
-            print(allbooks.authors(string))
+            list = (allbooks.authors(string))
         else:
             print("Your command was in valid, please try again :,(")
+        for i in list:
+            print(i.given_name, i.surname, i.birth_year, i.death_year, end = "")
+            for j in i.books:
+                print(j.title, j.publication_year)
+
     
     elif command == 'yearsearch':               #def books_between_years(self, start_year=None, end_year=None):
         if len(sys.argv) == 3 and sys.argv[2] == '--h':
@@ -74,9 +83,13 @@ def main():
                 except ValueError:
                     value = end_year + ' value is not an Integer'
                 return value
-            allbooks.books_between_years(start_year, end_year)
+            list = allbooks.books_between_years(start_year, end_year)
         else:
             print('Your command was invalid, please try again :(')
+        for i in list:
+            print(i.title, i.publication_year, end = "")
+            for j in i.authors:
+                print(j.given_name, i.surname, i.birth_year, i.death_year)
 
 if __name__ == "__main__":
     main()
