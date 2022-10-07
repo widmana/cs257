@@ -59,28 +59,30 @@ class Book:
         else:
             return False
 
+
 class BooksDataSource: 
     ''' This __init__ method parses the specified CSV file and creates
         suitable instance variables for the BooksDataSource object containing
         a collection of Author objects and a collection of Book objects.
     '''
-    our_books = []
-    our_authors = [] 
-
     def __init__(self, books_csv_file_name): 
+        self.our_books = []
+        self.our_authors = [] 
+
         with open(books_csv_file_name, 'r') as csv_file:
 
             csv_reader = csv.reader(csv_file)
             for line in csv_reader:
                 title = line[0]
                 publication_year = line[1]
-                rest = line[2]
+                rest = line[2]                  #csv reader only seperates the title and publication year, the rest of the line is in 'rest'
+
                 individuals = rest.split(" and ")
                 list_of_authors = []
                 for i in individuals:
                     components = i.split(" ")                    
                     if len(components) == 4:
-                        surname = components[1] + i[2]
+                        surname = components[1] + " " + components[2]
                         date_range = components[3]
                     else:
                         surname = components[1]
@@ -93,28 +95,22 @@ class BooksDataSource:
                     else:
                         death_year = (dates[1])[:-1]
                     list_of_titles = []
-                    this_author = Author(surname, given_name, birth_year, death_year, list_of_titles) # fullname parameter??
+                    this_author = Author(surname, given_name, birth_year, death_year, list_of_titles)
         
-
-                    if this_author in BooksDataSource.our_authors:      #this is doubling the authors
-                        found_index = BooksDataSource.our_authors.index(this_author)
-                        this_list_of_titles = BooksDataSource.our_authors[found_index].books
+                    if this_author in self.our_authors:     
+                        found_index = self.our_authors.index(this_author)
+                        this_list_of_titles = self.our_authors[found_index].books
                         this_list_of_titles.append(title)
                         new_this_author = Author(surname, given_name, birth_year, death_year, this_list_of_titles)
-                        del BooksDataSource.our_authors[found_index]
-                        BooksDataSource.our_authors.append(new_this_author)    #updates values with a new appended list of titles
+                        del self.our_authors[found_index]
+                        self.our_authors.append(new_this_author)   
                     else:
-                        list_of_titles.append(title)                            # i dont think we have to worry about sorting
-                        BooksDataSource.our_authors.append(this_author)         #appends the authors list with a new author
+                        list_of_titles.append(title)                        
+                        self.our_authors.append(this_author)       
                     list_of_authors.append(this_author)
 
                 this_book = Book(title, publication_year, list_of_authors)
-                BooksDataSource.our_books.append(this_book) 
-
-        index = 1
-        for i in self.our_authors:
-            print("booksource innit:", index, i.given_name)
-            index+=1
+                self.our_books.append(this_book) 
         pass
 
     def authors(self, search_text=None):
@@ -124,13 +120,13 @@ class BooksDataSource:
             by surname, breaking ties using given name (e.g. Ann Brontë comes before Charlotte Brontë).
         '''
         if search_text == None:
-            return BooksDataSource.our_authors
+            return sorted(self.our_authors)
         else:
             specified_author_list = []
-            for i in BooksDataSource.our_authors:
-                fullname = (i.given_name + " " + i.surname).upper()
+            for author in self.our_authors:
+                fullname = (author.given_name + " " + author.surname).upper()
                 if search_text.upper() in fullname:
-                    specified_author_list.append(i)
+                    specified_author_list.append(author)
                 else:
                     pass
             return sorted(specified_author_list)
@@ -147,17 +143,16 @@ class BooksDataSource:
                 default -- same as 'title' (that is, if sort_by is anything other than 'year'
                             or 'title', just do the same thing you would do for 'title')
         '''
+        specified_books_list = []
         if search_text == None or search_text == "None":
-            return BooksDataSource.our_books
+            specified_books_list = self.our_books
         else:
-            specified_books_list = []
-            for i in BooksDataSource.our_books:
-                if search_text.upper() in i.title.upper():
-                    specified_books_list.append(i)
+            for book in self.our_books:
+                if search_text.upper() in book.title.upper():
+                    specified_books_list.append(book)
             if sort_by == 'year':       
-                return sorted(specified_books_list, key = lambda b: (b.publication_year, b.title))
-            else:
-                return sorted(specified_books_list, key = lambda b: (b.title, b.publication_year))
+                return sorted(specified_books_list, key = lambda book: (book.publication_year, book.title))
+        return sorted(specified_books_list, key = lambda book: (book.title, book.publication_year))
 
     def books_between_years(self, start_year=None, end_year=None):
         ''' Returns a list of all the Book objects in this data source whose publication
@@ -172,28 +167,24 @@ class BooksDataSource:
         '''
         specified_books_list = []
         if start_year == None and end_year == None:
-            return BooksDataSource.our_books
+            specified_books_list = self.our_books
         elif start_year == 'None':
-             for i in BooksDataSource.our_books:
-                if int(i.publication_year) <= int(end_year):
-                    # print("testing1", i.title)
-                    specified_books_list.append(i)
+             for book in self.our_books:
+                if int(book.publication_year) <= int(end_year):
+                    specified_books_list.append(book)
                 else:
                     pass
         elif end_year == 'None':
-                for i in BooksDataSource.our_books:
-                    if int(i.publication_year) >= int(start_year):
-                        # print("testing2", i.title)
-                        specified_books_list.append(i)
+                for book in self.our_books:
+                    if int(book.publication_year) >= int(start_year):
+                        specified_books_list.append(book)
                     else:
                         pass           
         else:
-            #print(len(BooksDataSource.our_books))
-            for i in BooksDataSource.our_books:
-                if int(i.publication_year) >= int(start_year) and int(i.publication_year) <= int(end_year):
-                    #print("testing3", i.title)
-                    specified_books_list.append(i)
+            for book in self.our_books:
+                if int(book.publication_year) >= int(start_year) and int(book.publication_year) <= int(end_year):
+                    specified_books_list.append(book)
                 else:
                     pass
-        return sorted(specified_books_list, key = lambda b: (b.publication_year, b.title))
+        return sorted(specified_books_list, key = lambda book: (book.publication_year, book.title))
 

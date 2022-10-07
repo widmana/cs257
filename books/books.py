@@ -28,14 +28,14 @@ def main():
             print("[ --t | --y] [ --title | --year] Indicates whether this list is sorted by title in alphabetical order (default)")
             print("or by publication year from most rrrecent to least recent.")
         elif len(sys.argv) == 4 and sys.argv[2] == '--t':
-            string = sys.argv[3]
-            list = (allbooks.books(string))
+            user_input = sys.argv[3]
+            list = (allbooks.books(user_input))
         elif len(sys.argv) == 3:
-            string = sys.argv[2]
-            list = (allbooks.books(string))
+            user_input = sys.argv[2]
+            list = (allbooks.books(user_input))
         elif len(sys.argv) == 4 and sys.argv[2] == '--y':
-            string = sys.argv[3]  
-            list = (allbooks.books(string, 'year'))
+            user_input = sys.argv[3]  
+            list = (allbooks.books(user_input, 'year'))
         else:
             print("Your command was not valid, try again! :(")
         for book in list:
@@ -51,8 +51,8 @@ def main():
             print("Prints the synopsis and a list of the options for the authorsearch function.")
             exit()
         elif len(sys.argv) == 3:
-            string = sys.argv[2]
-            list = (allbooks.authors(string))
+            user_input = sys.argv[2]
+            list = (allbooks.authors(user_input))
         else:
             print("Your command was in valid, please try again :,(")
             exit()

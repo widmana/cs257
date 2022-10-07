@@ -10,6 +10,8 @@ import unittest
 class BooksDataSourceTester(unittest.TestCase):
     def setUp(self):
         self.data_source = BooksDataSource('books1.csv')
+        self.tiny_data_source = BooksDataSource('tinybooks.csv')
+        self.duplicatebooks_data_source = BooksDataSource('duplicatebooks.csv')
 
     def tearDown(self):
         pass
@@ -23,35 +25,26 @@ class BooksDataSourceTester(unittest.TestCase):
 
     def test_authors_equalLast(self):
         '''Searching by first and last name returns one author despite same last names'''
-        tiny_data_source = BooksDataSource('tinybooks.csv')
-        authors = (tiny_data_source.authors('John Green'))
-        index = 1
-        print("this is the length:", len(authors))
-        for i in authors:
-            print(index, i.given_name)
-            index+=1
+        authors = (self.tiny_data_source.authors('John Green'))
         self.assertTrue(len(authors) == 1)
         self.assertTrue(authors[0] == Author('Green', 'John'))
 
     def test_authors_equalFirst(self):
         '''Searching by first and last name returns one author despite same first names'''
-        tiny_data_source = BooksDataSource('tinybooks.csv')
-        authors = tiny_data_source.authors('Herman Melville')
+        authors = self.tiny_data_source.authors('Herman Melville')
         self.assertTrue(len(authors) == 1)
         self.assertTrue(authors[0] == Author('Melville', 'Herman'))
 
     def test_authors_tieBreak(self):
         '''breaks ties using the given name'''
-        tiny_data_source = BooksDataSource('tinybooks.csv')
-        authors = tiny_data_source.authors('Green')
+        authors = self.tiny_data_source.authors('Green')
         self.assertTrue(len(authors) == 2)
         self.assertTrue(authors[0] == Author('Green', 'Herman'))
         self.assertTrue(authors[1] == Author('Green', 'John'))
 
     def test_authors_multipleBooks(self):
         '''prints all books of a given author'''
-        tiny_data_source = BooksDataSource('tinybooks.csv')
-        authors = tiny_data_source.authors('John Green')
+        authors = self.tiny_data_source.authors('John Green')
         self.assertTrue(len(authors) == 1)
         self.assertTrue(authors[0] == Author('Green', 'John'))
         self.assertTrue('The Fault in Our Stars' in authors[0].books)
@@ -59,24 +52,22 @@ class BooksDataSourceTester(unittest.TestCase):
     
     def test_all_authors(self):
         '''If search_text is None, returns all of the author objects (alphabetically by last name)'''
-        tiny_data_source = BooksDataSource('tinybooks.csv')
-        authors = tiny_data_source.authors()
+        authors = self.tiny_data_source.authors()
         self.assertTrue(len(authors) == 5)
         self.assertTrue(authors[0] == Author('Austen', 'Jane'))
         self.assertTrue(authors[1] == Author('Gaiman', 'Neil'))
         self.assertTrue(authors[2] == Author('Green', 'Herman'))
         self.assertTrue(authors[3] == Author('Green', 'John'))
-        self.assertTrue(authors[4] == Author('Melville ', 'Herman'))
+        self.assertTrue(authors[4] == Author('Melville', 'Herman'))
 
     def test_incomplete_author(self):
         '''If search_text is an incomplete word and has an uppercase letter, returns all of the possible author objects (alphabetically)'''
-        tiny_data_source = BooksDataSource('tinybooks.csv')
-        authors = tiny_data_source.authors('aN')
+        authors = self.tiny_data_source.authors('aN')
         self.assertTrue(len(authors) == 4)
         self.assertTrue(authors[0] == Author('Austen', 'Jane'))
         self.assertTrue(authors[1] == Author('Gaiman', 'Neil'))
         self.assertTrue(authors[2] == Author('Green', 'Herman'))
-        self.assertTrue(authors[3] == Author('Melville ', 'Herman'))
+        self.assertTrue(authors[3] == Author('Melville', 'Herman'))
 
     #Testing books function
     def test_unique_book(self):
@@ -93,7 +84,7 @@ class BooksDataSourceTester(unittest.TestCase):
         self.assertTrue(books[0].authors[0] == Author('Gaiman', 'Neil'))
         self.assertTrue(books[0].authors[1] == Author('Pratchett', 'Terry'))
 
-    def test_unique_book_commas(self):
+    def test_unique_book_commas(self): 
         '''unique book title with commas returns correct author and publication_year'''
         books = self.data_source.books('Right Ho, Jeeves')
         self.assertTrue(len(books) == 1)
@@ -113,15 +104,14 @@ class BooksDataSourceTester(unittest.TestCase):
         '''multiple books sorted by year'''
         books = self.data_source.books('se', 'year')
         self.assertTrue(len(books) == 4)
-        self.assertTrue(books[0].publication_year == '2020')
-        self.assertTrue(books[1].publication_year == '2016')
-        self.assertTrue(books[2].publication_year == '1982')
-        self.assertTrue(books[3].publication_year == '1813')
+        self.assertTrue(books[0].publication_year == '1813')
+        self.assertTrue(books[1].publication_year == '1982')
+        self.assertTrue(books[2].publication_year == '2016')
+        self.assertTrue(books[3].publication_year == '2020')
 
     def test_books_by_year_tieBreak(self):
         '''multiple books sorted by year, tiebreak with title'''
-        duplicates_data_source = BooksDataSource('duplicatebooks.csv')
-        books = duplicates_data_source.books('dog', 'year')
+        books = self.duplicatebooks_data_source.books('dog', 'year')
         self.assertTrue(len(books) == 4)
         self.assertTrue(books[0].publication_year == '1934')
         self.assertTrue(books[1].publication_year == '1994')
@@ -132,7 +122,7 @@ class BooksDataSourceTester(unittest.TestCase):
 
     def test_all_books(self):
         '''If search_text is None, returns all of the book objects (alphabetically by title)'''
-        books = self.data_source_tiny.books()
+        books = self.tiny_data_source.books()
         self.assertTrue(len(books) == 6)
         self.assertTrue(books[0].title == 'Emma')
         self.assertTrue(books[1].title == 'Looking for Alaska')
@@ -162,31 +152,30 @@ class BooksDataSourceTester(unittest.TestCase):
 
     def test_books_between_years_empty_search(self):
         '''Checks if BBY's empty search returns all the books'''
-        tiny_data_source = BooksDataSource('tinybooks.csv')
-        books = tiny_data_source.books_between_years()
+        books = self.tiny_data_source.books_between_years()
         self.assertTrue(len(books) == 6)
-        self.assertTrue(books[0].title == 'Emma')
-        self.assertTrue(books[1].title == 'Looking for Alaska')
-        self.assertTrue(books[2].title == 'Moby Dick')
+        self.assertTrue(books[0].title == 'Moby Dick')
+        self.assertTrue(books[1].title == 'Emma')
+        self.assertTrue(books[2].title == 'Omoo')
         self.assertTrue(books[3].title == 'Neverwhere')
-        self.assertTrue(books[4].title == 'Omoo')
-        self.assertTrue(books[5].title == 'The Fault in Our Stars')
+        self.assertTrue(books[4].title == 'The Fault in Our Stars')
+        self.assertTrue(books[5].title == 'Looking for Alaska')
 
     def test_books_between_years_end_year_none(self):
         '''Checks if BBY's end year is empty, s.t. books on or after start year are included'''
         books = self.data_source.books_between_years('2018', 'None')
-        self.assertTrue(len(books)== 3)
+        self.assertTrue(len(books)== 4)
         self.assertTrue(books[0].title == 'There, There' and books[1].title == 'Fine, Thanks' and
-        books[2].title == 'Boys and Sex')
+        books[2].title == 'Boys and Sex' and books[3].title == 'The Invisible Life of Addie LaRue')
     
     def test_books_between_years_start_year_none(self):
         '''Checks if BBY's start year is empty, s.t. books on or before end year are included'''
         books = self.data_source.books_between_years('None' ,'1815')
-        for book in books:
-            authors_list = [a.given_name + " " + a.surname for a in book.authors]
-            print(book.title + ", " + book.publication_year + ", " + " and ".join(authors_list))
-        self.assertTrue(len(books)== 3)
-        self.assertTrue(books[0].title == 'Pride and Prejudice' and books[1].title == 'Sense and Sensibility' and books[2].title == 'Emma')
+        self.assertTrue(len(books)== 4)
+        self.assertTrue(books[0].title == 'The Life and Opinions of Tristram Shandy, Gentleman')
+        self.assertTrue(books[1].title == 'Pride and Prejudice')
+        self.assertTrue(books[2].title == 'Sense and Sensibility')
+        self.assertTrue(books[3].title == 'Emma')
 
     def test_books_between_years_dont_exist(self):
         '''checks if when user puts in years that arent in BBY's database, that it returns an empty list'''
@@ -198,7 +187,6 @@ class BooksDataSourceTester(unittest.TestCase):
         '''Checks if when user types two years in the wrong order, that BBY throws an error'''
         books = self.data_source.books_between_years('2002' ,'1995')
         self.assertTrue(len(books)== 0)
-
 
 if __name__ == '__main__':
     unittest.main()
