@@ -100,7 +100,10 @@ class BooksDataSource:
                         given_name = components[0]                
                         dates = date_range.split("-")
                         birth_year = (dates[0])[1:]
-                        death_year = (dates[1])[:-1]
+                        if len(dates[1]) == 1:
+                            death_year = None
+                        else:
+                            death_year = (dates[1])[:-1]
                         list_of_titles = []
                         this_author = Author(surname, given_name, birth_year, death_year, list_of_titles) # fullname parameter??
             
@@ -189,7 +192,7 @@ class BooksDataSource:
             should be included.
         '''
         specified_books_list = []
-        if start_year == 'None' and end_year == 'None':
+        if start_year == None and end_year == None:
             return BooksDataSource.our_books
         elif start_year == 'None':
              for i in BooksDataSource.our_books:

@@ -38,10 +38,9 @@ def main():
             list = (allbooks.books(string, 'year'))
         else:
             print("Your command was not valid, try again! :(")
-        for i in list:
-            print(i.title, i.publication_year, end = "")
-            for j in i.authors:
-                print(",", j)
+        for book in list:
+            authors_list = [a.given_name + " " + a.surname for a in book.authors]
+            print(book.title + ", " + book.publication_year + ", " + " and ".join(authors_list))
     
     elif  command == 'authorsearch':            #def authors(self, search_text=None):
         if len(sys.argv) == 4 and sys.argv[2] == '-h':
@@ -50,15 +49,15 @@ def main():
             print("order by surname with ties being broken by given name.")
             print("[--h] [--help]")
             print("Prints the synopsis and a list of the options for the authorsearch function.")
+            exit()
         elif len(sys.argv) == 3:
             string = sys.argv[2]
             list = (allbooks.authors(string))
         else:
             print("Your command was in valid, please try again :,(")
-        for i in list:
-            print(i.given_name, i.surname, i.birth_year, "-", i.death_year, end = ":")
-            for j in i.books:
-                print(j, end = ", ")
+            exit()
+        for author in list:
+            print(author.given_name, author.surname, "(" + author.birth_year + "-" + author.death_year + ")" + ": " + ", ".join(author.books))
 
     
     elif command == 'yearsearch':               #def books_between_years(self, start_year=None, end_year=None):
@@ -70,26 +69,32 @@ def main():
         elif len (sys.argv) == 4:
             start_year = sys.argv[2]
             end_year = sys.argv[3] 
+            failure = 0     #assumes the tests will fail
             if start_year != 'None':
                 try:
                     value = int(start_year)
+                    failure = 1
+                    pass
                 except ValueError:
-                    print("This is not a valid year")
+                    print("You did not enter two valid years")
                     exit()
+
             if end_year != 'None':
                 try:
                     value = int(end_year)
+                    failure = 1
+                    pass
                 except ValueError:
-                    print("This is not a valid year")
+                    print("You did not enter two valid years")
                     exit()
-            else:
+            if failure == 1:
                 list = allbooks.books_between_years(start_year, end_year)
+                for book in list:
+                    authors_list = [a.given_name + " " + a.surname for a in book.authors]
+                    print(book.title + ", " + book.publication_year + ", " + " and ".join(authors_list))
         else:
             print('Your command was invalid, please try again :(')
-        for i in list:
-            print(i.title, i.publication_year, end = ": ")
-            for j in i.authors:
-                print(j)
+       
 
 if __name__ == "__main__":
     main()

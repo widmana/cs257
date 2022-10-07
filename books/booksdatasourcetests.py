@@ -170,14 +170,17 @@ class BooksDataSourceTester(unittest.TestCase):
 
     def test_books_between_years_end_year_none(self):
         '''Checks if BBY's end year is empty, s.t. books on or after start year are included'''
-        books = self.data_source.books_between_years('2018', '')
+        books = self.data_source.books_between_years('2018', 'None')
         self.assertTrue(len(books)== 3)
         self.assertTrue(books[0].title == 'There, There' and books[1].title == 'Fine, Thanks' and
         books[2].title == 'Boys and Sex')
     
     def test_books_between_years_start_year_none(self):
         '''Checks if BBY's start year is empty, s.t. books on or before end year are included'''
-        books = self.data_source.books_between_years('' ,'1815')
+        books = self.data_source.books_between_years('None' ,'1815')
+        for book in books:
+            authors_list = [a.given_name + " " + a.surname for a in book.authors]
+            print(book.title + ", " + book.publication_year + ", " + " and ".join(authors_list))
         self.assertTrue(len(books)== 3)
         self.assertTrue(books[0].title == 'Pride and Prejudice' and books[1].title == 'Sense and Sensibility' and books[2].title == 'Emma')
 
