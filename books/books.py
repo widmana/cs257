@@ -57,8 +57,10 @@ def main():
             print("Your command was in valid, please try again :,(")
             exit()
         for author in list:
-            print(author.given_name, author.surname, "(" + author.birth_year + "-" + author.death_year + ")" + ": " + ", ".join(author.books))
-
+            if author.death_year != None:
+                print(author.given_name, author.surname, "(" + author.birth_year + "-" + author.death_year + ")" + ": " + ", ".join(author.books))
+            else:
+                print(author.given_name, author.surname, "(" + author.birth_year + "-): " + ", ".join(author.books))
     
     elif command == 'yearsearch':               #def books_between_years(self, start_year=None, end_year=None):
         if len(sys.argv) == 3 and sys.argv[2] == '--h':

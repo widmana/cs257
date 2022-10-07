@@ -24,7 +24,12 @@ class BooksDataSourceTester(unittest.TestCase):
     def test_authors_equalLast(self):
         '''Searching by first and last name returns one author despite same last names'''
         tiny_data_source = BooksDataSource('tinybooks.csv')
-        authors = tiny_data_source.authors('John Green')
+        authors = (tiny_data_source.authors('John Green'))
+        index = 1
+        print("this is the length:", len(authors))
+        for i in authors:
+            print(index, i.given_name)
+            index+=1
         self.assertTrue(len(authors) == 1)
         self.assertTrue(authors[0] == Author('Green', 'John'))
 
@@ -44,13 +49,13 @@ class BooksDataSourceTester(unittest.TestCase):
         self.assertTrue(authors[1] == Author('Green', 'John'))
 
     def test_authors_multipleBooks(self):
-        '''prints all books (alphabetically) of a given author'''
+        '''prints all books of a given author'''
         tiny_data_source = BooksDataSource('tinybooks.csv')
         authors = tiny_data_source.authors('John Green')
         self.assertTrue(len(authors) == 1)
         self.assertTrue(authors[0] == Author('Green', 'John'))
-        self.assertTrue(authors[0].books[0].title == 'The Fault in Our Stars')
-        self.assertTrue(authors[0].books[1].title == 'Looking for Alaska')
+        self.assertTrue('The Fault in Our Stars' in authors[0].books)
+        self.assertTrue('Looking for Alaska' in authors[0].books)
     
     def test_all_authors(self):
         '''If search_text is None, returns all of the author objects (alphabetically by last name)'''
@@ -127,8 +132,7 @@ class BooksDataSourceTester(unittest.TestCase):
 
     def test_all_books(self):
         '''If search_text is None, returns all of the book objects (alphabetically by title)'''
-        tiny_data_source = BooksDataSource('tinybooks.csv')
-        books = tiny_data_source.books()
+        books = self.data_source_tiny.books()
         self.assertTrue(len(books) == 6)
         self.assertTrue(books[0].title == 'Emma')
         self.assertTrue(books[1].title == 'Looking for Alaska')
@@ -188,7 +192,7 @@ class BooksDataSourceTester(unittest.TestCase):
         '''checks if when user puts in years that arent in BBY's database, that it returns an empty list'''
         books = self.data_source.books_between_years('5' ,'7')
         self.assertTrue(len(books)== 0)
-        ## return empty list, throw exception error (crashes program), prompt user to re enter
+        # return empty list, throw exception error (crashes program), prompt user to re enter
         
     def test_books_between_years_wrong_order(self):
         '''Checks if when user types two years in the wrong order, that BBY throws an error'''
