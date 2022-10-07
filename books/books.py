@@ -23,10 +23,15 @@ def main():
     # added __repr__ into booksearch and author search, it returns the string form of an object
     if command == 'booksearch':     #books(self, search_text=None, sort_by='title'):
         if len(sys.argv) == 3 and sys.argv[2] == '--h':
-            print("booksearch  <string>  Prints a list of books whose titles contain string (case-insensitive). ")
-            print("[--h] [--help] Prints the synopsis and a list of the options for the booksearch function.")
-            print("[ --t | --y] [ --title | --year] Indicates whether this list is sorted by title in alphabetical order (default)")
-            print("or by publication year from most rrrecent to least recent.")
+            print('')
+            print("booksearch  <string>")
+            print("     Prints a list of books whose titles contain string (case-insensitive). ")
+            print("[--h] [--help]")
+            print("     Prints the synopsis and a list of the options for the booksearch function.")
+            print("[ --t | --y] [ --title | --year]") 
+            print("     Indicates whether this list is sorted by title in alphabetical order (default) or by publication year from most recent to least recent.")
+            print('')
+            exit()
         elif len(sys.argv) == 4 and sys.argv[2] == '--t':
             user_input = sys.argv[3]
             list = (allbooks.books(user_input))
@@ -42,13 +47,16 @@ def main():
             authors_list = [a.given_name + " " + a.surname for a in book.authors]
             print(book.title + ", " + book.publication_year + ", " + " and ".join(authors_list))
     
-    elif  command == 'authorsearch':            #def authors(self, search_text=None):
-        if len(sys.argv) == 4 and sys.argv[2] == '-h':
-            print("Prints a list of authors whose names contain S (case-insensitive) and a list")
-            print("of their published books in no particular order. Authors will be printed in alphabetical")
-            print("order by surname with ties being broken by given name.")
+    elif  command == 'authorsearch': 
+        if len(sys.argv) == 3 and sys.argv[2] == '--h':
+            print('')
+            print("authorsearch <string>")
+            print("     Prints a list of authors whose names contain S (case-insensitive) and a list")
+            print("     of their published books in no particular order. Authors will be printed in alphabetical")
+            print("     order by surname with ties being broken by given name.")
             print("[--h] [--help]")
-            print("Prints the synopsis and a list of the options for the authorsearch function.")
+            print("     Prints the synopsis and a list of the options for the authorsearch function.")
+            print('')
             exit()
         elif len(sys.argv) == 3:
             user_input = sys.argv[2]
@@ -64,10 +72,14 @@ def main():
     
     elif command == 'yearsearch':               #def books_between_years(self, start_year=None, end_year=None):
         if len(sys.argv) == 3 and sys.argv[2] == '--h':
-            print('Prints a list of books published between the beginning year and ending year ')
-            print('inclusive) of an inputed range. Books are printed in order of publication ')
-            print('year from most recent to least recent.')
-            print('[--h] [--help] Prints the synopsis and a list of the options for the yearsearch function.')
+            print('')
+            print("yearsearch <beginning_year> <ending_year>")
+            print('     Prints a list of books published between the beginning year and ending year ')
+            print('     inclusive) of an inputed range. Books are printed in order of publication ')
+            print('     year from most recent to least recent.')
+            print('[--h] [--help]')
+            print('     Prints the synopsis and a list of the options for the yearsearch function.')
+            print('')
         elif len (sys.argv) == 4:
             start_year = sys.argv[2]
             end_year = sys.argv[3] 

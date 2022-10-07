@@ -60,6 +60,7 @@ class Book:
             return False
 
 
+
 class BooksDataSource: 
     ''' This __init__ method parses the specified CSV file and creates
         suitable instance variables for the BooksDataSource object containing
@@ -78,16 +79,17 @@ class BooksDataSource:
                 rest = line[2]                  #csv reader only seperates the title and publication year, the rest of the line is in 'rest'
 
                 individuals = rest.split(" and ")
+                
                 list_of_authors = []
-                for i in individuals:
-                    components = i.split(" ")                    
-                    if len(components) == 4:
-                        surname = components[1] + " " + components[2]
-                        date_range = components[3]
+                for individual in individuals:
+                    individual_components = individual.split(" ")                    
+                    if len(individual_components) == 4:
+                        surname = individual_components[1] + " " + individual_components[2]
+                        date_range = individual_components[3]
                     else:
-                        surname = components[1]
-                        date_range = components[2]
-                    given_name = components[0]                
+                        surname = individual_components[1]
+                        date_range = individual_components[2]
+                    given_name = individual_components[0]                
                     dates = date_range.split("-")
                     birth_year = (dates[0])[1:]
                     if len(dates[1]) == 1:
