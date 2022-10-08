@@ -73,32 +73,39 @@ class BooksDataSource:
         with open(books_csv_file_name, 'r') as csv_file:
 
             csv_reader = csv.reader(csv_file)
+
             for line in csv_reader:
                 title = line[0]
                 publication_year = line[1]
-                rest = line[2]                  #csv reader only seperates the title and publication year, the rest of the line is in 'rest'
+                rest = line[2]                      #csv reader only seperates the title and publication year, the rest of the line is in 'rest'
 
-                individuals = rest.split(" and ")
-                
+                individuals = rest.split(" and ")   #if there are multiple authors
                 list_of_authors = []
-                for individual in individuals:
+                for individual in individuals:      #for each author
+
+                    #get names
                     individual_components = individual.split(" ")                    
-                    if len(individual_components) == 4:
+                    if len(individual_components) == 4:     #if the author has a middle name, include the middle name in surname
                         surname = individual_components[1] + " " + individual_components[2]
                         date_range = individual_components[3]
                     else:
                         surname = individual_components[1]
                         date_range = individual_components[2]
-                    given_name = individual_components[0]                
+                    given_name = individual_components[0]
+
+                    #get dates               
                     dates = date_range.split("-")
                     birth_year = (dates[0])[1:]
                     if len(dates[1]) == 1:
                         death_year = None
                     else:
                         death_year = (dates[1])[:-1]
+
+                    #instantiate the author with an empty list of book titles
                     list_of_titles = []
                     this_author = Author(surname, given_name, birth_year, death_year, list_of_titles)
         
+                    #if the author is already in the our_authors list, add the title to the titles instance list and replace the old author object
                     if this_author in self.our_authors:     
                         found_index = self.our_authors.index(this_author)
                         this_list_of_titles = self.our_authors[found_index].books
@@ -106,11 +113,13 @@ class BooksDataSource:
                         new_this_author = Author(surname, given_name, birth_year, death_year, this_list_of_titles)
                         del self.our_authors[found_index]
                         self.our_authors.append(new_this_author)   
+                    #otherwise, just append the new author object
                     else:
                         list_of_titles.append(title)                        
                         self.our_authors.append(this_author)       
                     list_of_authors.append(this_author)
-
+                
+                #create a new book and add it to the our_books list
                 this_book = Book(title, publication_year, list_of_authors)
                 self.our_books.append(this_book) 
         pass

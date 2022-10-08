@@ -13,15 +13,11 @@ from booksdatasource import BooksDataSource
 
 
 def main():
-    # with open('books1.csv', 'r') as csv_file:
-    #     csv_reader = csv.reader(csv_file)
     filename = 'books1.csv'
     allbooks = BooksDataSource(filename)
 
     command = sys.argv[1]
-    # all the indexes were off by 1 since he first sysargv idx was the file name
-    # added __repr__ into booksearch and author search, it returns the string form of an object
-    if command == 'booksearch':     #books(self, search_text=None, sort_by='title'):
+    if command == 'booksearch':     
         if len(sys.argv) == 3 and sys.argv[2] == '--h':
             print('')
             print("booksearch  <string>")
@@ -34,18 +30,18 @@ def main():
             exit()
         elif len(sys.argv) == 4 and sys.argv[2] == '--t':
             user_input = sys.argv[3]
-            list = (allbooks.books(user_input))
+            booksearch_books = (allbooks.books(user_input))
         elif len(sys.argv) == 3:
             user_input = sys.argv[2]
-            list = (allbooks.books(user_input))
+            booksearch_books = (allbooks.books(user_input))
         elif len(sys.argv) == 4 and sys.argv[2] == '--y':
             user_input = sys.argv[3]  
-            list = (allbooks.books(user_input, 'year'))
+            booksearch_books = (allbooks.books(user_input, 'year'))
         else:
             print("Your command was not valid, try again! :(")
-        for book in list:
-            authors_list = [a.given_name + " " + a.surname for a in book.authors]
-            print(book.title + ", " + book.publication_year + ", " + " and ".join(authors_list))
+        for book in booksearch_books:
+            authors = [a.given_name + " " + a.surname for a in book.authors]
+            print(book.title + ", " + book.publication_year + ", " + " and ".join(authors))
     
     elif  command == 'authorsearch': 
         if len(sys.argv) == 3 and sys.argv[2] == '--h':
@@ -60,30 +56,31 @@ def main():
             exit()
         elif len(sys.argv) == 3:
             user_input = sys.argv[2]
-            list = (allbooks.authors(user_input))
+            authorsearch_authors = (allbooks.authors(user_input))
         else:
             print("Your command was in valid, please try again :,(")
             exit()
-        for author in list:
+        for author in authorsearch_authors:
             if author.death_year != None:
                 print(author.given_name, author.surname, "(" + author.birth_year + "-" + author.death_year + ")" + ": " + ", ".join(author.books))
             else:
                 print(author.given_name, author.surname, "(" + author.birth_year + "-): " + ", ".join(author.books))
     
-    elif command == 'yearsearch':               #def books_between_years(self, start_year=None, end_year=None):
+    elif command == 'yearsearch':        
         if len(sys.argv) == 3 and sys.argv[2] == '--h':
             print('')
             print("yearsearch <beginning_year> <ending_year>")
             print('     Prints a list of books published between the beginning year and ending year ')
             print('     inclusive) of an inputed range. Books are printed in order of publication ')
-            print('     year from most recent to least recent.')
+            print('     year from most recent to least recent. If the user wishes to not include a beginning')
+            print('     and/or ending year, then the user must input "None" in the place of a year. ')
             print('[--h] [--help]')
             print('     Prints the synopsis and a list of the options for the yearsearch function.')
             print('')
         elif len (sys.argv) == 4:
             start_year = sys.argv[2]
             end_year = sys.argv[3] 
-            failure = 0     #assumes the tests will fail
+            failure = 0  
             if start_year != 'None':
                 try:
                     value = int(start_year)
@@ -102,10 +99,10 @@ def main():
                     print("You did not enter two valid years")
                     exit()
             if failure == 1:
-                list = allbooks.books_between_years(start_year, end_year)
-                for book in list:
-                    authors_list = [a.given_name + " " + a.surname for a in book.authors]
-                    print(book.title + ", " + book.publication_year + ", " + " and ".join(authors_list))
+                yearsearch_books = allbooks.books_between_years(start_year, end_year)
+                for book in yearsearch_books:
+                    authors = [a.given_name + " " + a.surname for a in book.authors]
+                    print(book.title + ", " + book.publication_year + ", " + " and ".join(authors))
         else:
             print('Your command was invalid, please try again :(')
        
