@@ -1,0 +1,1231 @@
+1,"('CHN', 'China')",CHN
+2,"('DEN', 'Denmark')",DEN
+3,"('DEN', 'Denmark/Sweden')",DEN
+4,"('NED', 'Netherlands')",NED
+5,"('USA', 'United States')",USA
+6,"('FIN', 'Finland')",FIN
+7,"('NOR', 'Norway')",NOR
+8,"('ROU', 'Romania')",ROU
+9,"('EST', 'Estonia')",EST
+10,"('FRA', 'France')",FRA
+11,"('NOR', 'Taifun')",NOR
+12,"('MAR', 'Morocco')",MAR
+13,"('ESP', 'Spain')",ESP
+14,"('EGY', 'Egypt')",EGY
+15,"('IRI', 'Iran')",IRI
+16,"('BUL', 'Bulgaria')",BUL
+17,"('ITA', 'Italy')",ITA
+18,"('CHA', 'Chad')",CHA
+19,"('AZE', 'Azerbaijan')",AZE
+20,"('SUD', 'Sudan')",SUD
+21,"('RUS', 'Russia')",RUS
+22,"('ARG', 'Argentina')",ARG
+23,"('CUB', 'Cuba')",CUB
+24,"('BLR', 'Belarus')",BLR
+25,"('GRE', 'Greece')",GRE
+26,"('CMR', 'Cameroon')",CMR
+27,"('TUR', 'Turkey')",TUR
+28,"('CHI', 'Chile')",CHI
+29,"('MEX', 'Mexico')",MEX
+30,"('URS', 'Soviet Union')",URS
+31,"('NCA', 'Nicaragua')",NCA
+32,"('HUN', 'Hungary')",HUN
+33,"('NGR', 'Nigeria')",NGR
+34,"('ALG', 'Algeria')",ALG
+35,"('KUW', 'Kuwait')",KUW
+36,"('BRN', 'Bahrain')",BRN
+37,"('PAK', 'Pakistan')",PAK
+38,"('IRQ', 'Iraq')",IRQ
+39,"('UAR', 'United Arab Republic')",UAR
+40,"('LIB', 'Lebanon')",LIB
+41,"('QAT', 'Qatar')",QAT
+42,"('MAS', 'Malaysia')",MAS
+43,"('GER', 'Germany')",GER
+44,"('GRE', 'Thessalonki-1')",GRE
+45,"('CAN', 'Canada')",CAN
+46,"('IRL', 'Ireland')",IRL
+47,"('AUS', 'Australia')",AUS
+48,"('RSA', 'South Africa')",RSA
+49,"('ERI', 'Eritrea')",ERI
+50,"('TAN', 'Tanzania')",TAN
+51,"('JOR', 'Jordan')",JOR
+52,"('TUN', 'Tunisia')",TUN
+53,"('LBA', 'Libya')",LBA
+54,"('BEL', 'Belgium')",BEL
+55,"('DJI', 'Djibouti')",DJI
+56,"('PLE', 'Palestine')",PLE
+57,"('COM', 'Comoros')",COM
+58,"('KAZ', 'Kazakhstan')",KAZ
+59,"('BRU', 'Brunei')",BRU
+60,"('IND', 'India')",IND
+61,"('KSA', 'Saudi Arabia')",KSA
+62,"('SYR', 'Syria')",SYR
+63,"('MDV', 'Maldives')",MDV
+64,"('ETH', 'Ethiopia')",ETH
+65,"('UAE', 'United Arab Emirates')",UAE
+66,"('YAR', 'North Yemen')",YAR
+67,"('INA', 'Indonesia')",INA
+68,"('PHI', 'Philippines')",PHI
+69,"('SGP', 'Singapore')",SGP
+70,"('UZB', 'Uzbekistan')",UZB
+71,"('KGZ', 'Kyrgyzstan')",KGZ
+72,"('TJK', 'Tajikistan')",TJK
+73,"('EUN', 'Unified Team')",EUN
+74,"('JPN', 'Japan')",JPN
+75,"('JPN', 'Japan-1')",JPN
+76,"('CGO', 'Congo (Brazzaville)')",CGO
+77,"('SUI', 'Switzerland')",SUI
+78,"('BRA', 'Brazil')",BRA
+79,"('FRG', 'West Germany')",FRG
+80,"('GDR', 'East Germany')",GDR
+81,"('MON', 'Monaco')",MON
+82,"('NOR', 'Fornebo')",NOR
+83,"('ISR', 'Israel')",ISR
+84,"('USA', 'Vesper Boat Club')",USA
+85,"('URU', 'Uruguay')",URU
+86,"('SWE', 'Sweden')",SWE
+87,"('ISV', 'United States Virgin Islands')",ISV
+88,"('SRI', 'Sri Lanka')",SRI
+89,"('ARM', 'Armenia')",ARM
+90,"('CIV', ""Cote d'Ivoire"")",CIV
+91,"('KEN', 'Kenya')",KEN
+92,"('BEN', 'Benin')",BEN
+93,"('FRA', 'France-1')",FRA
+94,"('UKR', 'Ukraine')",UKR
+95,"('GBR', 'Great Britain')",GBR
+96,"('GHA', 'Ghana')",GHA
+97,"('SOM', 'Somalia')",SOM
+98,"('LAT', 'Latvia')",LAT
+99,"('NIG', 'Niger')",NIG
+100,"('MLI', 'Mali')",MLI
+101,"('AFG', 'Afghanistan')",AFG
+102,"('POL', 'Poland')",POL
+103,"('CRC', 'Costa Rica')",CRC
+104,"('PAN', 'Panama')",PAN
+105,"('GEO', 'Georgia')",GEO
+106,"('SLO', 'Slovenia')",SLO
+107,"('CRO', 'Croatia')",CRO
+108,"('RUS', 'Russia-2')",RUS
+109,"('RUS', 'Russia-1')",RUS
+110,"('GUY', 'Guyana')",GUY
+111,"('NZL', 'New Zealand')",NZL
+112,"('POR', 'Portugal')",POR
+113,"('PAR', 'Paraguay')",PAR
+114,"('ANG', 'Angola')",ANG
+115,"('VEN', 'Venezuela')",VEN
+116,"('COL', 'Colombia')",COL
+117,"('BAN', 'Bangladesh')",BAN
+118,"('PER', 'Peru')",PER
+119,"('ESA', 'El Salvador')",ESA
+120,"('PUR', 'Puerto Rico')",PUR
+121,"('FRA', 'France-2')",FRA
+122,"('UGA', 'Uganda')",UGA
+123,"('SUI', 'Switzerland-2')",SUI
+124,"('SUI', 'Switzerland-1')",SUI
+125,"('HON', 'Honduras')",HON
+126,"('ECU', 'Ecuador')",ECU
+127,"('TKM', 'Turkmenistan')",TKM
+128,"('MRI', 'Mauritius')",MRI
+129,"('SEY', 'Seychelles')",SEY
+130,"('TCH', 'Czechoslovakia')",TCH
+131,"('GBR', 'Great Britain-1')",GBR
+132,"('LUX', 'Luxembourg')",LUX
+133,"('MTN', 'Mauritania')",MTN
+134,"('CZE', 'Czech Republic')",CZE
+135,"('SKN', 'Saint Kitts and Nevis')",SKN
+136,"('USA', 'New York Athletic Club #2-4')",USA
+137,"('TTO', 'Trinidad and Tobago')",TTO
+138,"('DOM', 'Dominican Republic')",DOM
+139,"('VIN', 'Saint Vincent and the Grenadines')",VIN
+140,"('USA', 'Mystery')",USA
+141,"('JAM', 'Jamaica')",JAM
+142,"('LBR', 'Liberia')",LBR
+143,"('SUR', 'Suriname')",SUR
+144,"('NGR', 'Nigeria-2')",NGR
+145,"('NEP', 'Nepal')",NEP
+146,"('MGL', 'Mongolia')",MGL
+147,"('GER', 'Germany-2')",GER
+148,"('AUT', 'Austria')",AUT
+149,"('BRA', 'Clementine V')",BRA
+150,"('RUS', 'Bylina-2')",RUS
+151,"('PLW', 'Palau')",PLW
+152,"('LTU', 'Lithuania')",LTU
+153,"('TOG', 'Togo')",TOG
+154,"('NAM', 'Namibia')",NAM
+155,"('AHO', 'Netherlands Antilles')",AHO
+156,"('ISL', 'Iceland')",ISL
+157,"('ASA', 'American Samoa')",ASA
+158,"('SAM', 'Samoa')",SAM
+159,"('RWA', 'Rwanda')",RWA
+160,"('DMA', 'Dominica')",DMA
+161,"('GBR', 'Great Britain-2')",GBR
+162,"('HAI', 'Haiti')",HAI
+163,"('NOR', 'Stella-2')",NOR
+164,"('MLT', 'Malta')",MLT
+165,"('USA', 'United States-1')",USA
+166,"('USA', 'United States-2')",USA
+167,"('ARG', 'Argentina-2')",ARG
+168,"('GRE', 'Large boat, Central Naval Prep School ""Poros""-1')",GRE
+169,"('CYP', 'Cyprus')",CYP
+170,"('GUI', 'Guinea')",GUI
+171,"('MEX', 'Xolotl')",MEX
+172,"('BIZ', 'Belize')",BIZ
+173,"('ARG', 'Matrero II')",ARG
+174,"('ARG', 'Blue Red')",ARG
+175,"('SWE', 'Gteborgs Roddklubb-1')",SWE
+176,"('INA', 'Indonesia-1')",INA
+177,"('GER', 'Germany-1')",GER
+178,"('YMD', 'South Yemen')",YMD
+179,"('KOR', 'South Korea')",KOR
+180,"('FIN', 'Lucky Girl-1')",FIN
+181,"('GER', 'Mutafo')",GER
+182,"('SWE', 'Sweden-2')",SWE
+183,"('SWE', 'Sweden-1')",SWE
+184,"('THA', 'Thailand')",THA
+185,"('ITA', 'Italy-2')",ITA
+186,"('GBR', 'Yeoman VII')",GBR
+187,"('GBR', 'Yeoman XII')",GBR
+188,"('BER', 'Bermuda')",BER
+189,"('ANZ', 'Australasia')",ANZ
+190,"('FRA', 'Union des Socits Franais de Sports Athletiques')",FRA
+191,"('SCG', 'Serbia and Montenegro')",SCG
+192,"('SLE', 'Sierra Leone')",SLE
+193,"('SWE', 'Bissbi')",SWE
+194,"('PNG', 'Papua New Guinea')",PNG
+195,"('GRE', 'Greece-3')",GRE
+196,"('YEM', 'Yemen')",YEM
+197,"('IOA', 'Individual Olympic Athletes')",IOA
+198,"('OMA', 'Oman')",OMA
+199,"('FIJ', 'Fiji')",FIJ
+200,"('VAN', 'Vanuatu')",VAN
+201,"('FRA', 'France-3')",FRA
+202,"('FRA', 'Martha-27')",FRA
+203,"('FRA', 'Martha-1')",FRA
+204,"('MDA', 'Moldova')",MDA
+205,"('CAN', 'Canada-2')",CAN
+206,"('CAN', 'Canada-1')",CAN
+207,"('YUG', 'Yugoslavia')",YUG
+208,"('BAH', 'Bahamas')",BAH
+209,"('GUA', 'Guatemala')",GUA
+210,"('URS', 'Burevestnik')",URS
+211,"('URS', 'Druzhba')",URS
+212,"('URS', 'Soviet Union-2')",URS
+213,"('URS', 'Soviet Union-1')",URS
+214,"('URS', 'Olen')",URS
+215,"('SRB', 'Serbia')",SRB
+216,"('IVB', 'British Virgin Islands')",IVB
+217,"('MOZ', 'Mozambique')",MOZ
+218,"('FIN', 'Heatherbell')",FIN
+219,"('CAF', 'Central African Republic')",CAF
+220,"('MAD', 'Madagascar')",MAD
+221,"('MAL', 'Malaya')",MAL
+222,"('FRA', 'Socit Nautique de Bayonne')",FRA
+223,"('BIH', 'Bosnia and Herzegovina')",BIH
+224,"('GUM', 'Guam')",GUM
+225,"('BRA', 'Brazil-1')",BRA
+226,"('CAY', 'Cayman Islands')",CAY
+227,"('FRA', 'Cupidon Viking')",FRA
+228,"('FRA', 'Damoiselle')",FRA
+229,"('SVK', 'Slovakia')",SVK
+230,"('FRA', 'USFSA')",FRA
+231,"('IRL', 'The Cloud')",IRL
+232,"('ESP', 'Galerna')",ESP
+233,"('NOR', 'Heira II')",NOR
+234,"('DEN', 'Nykjbings paa Falster')",DEN
+235,"('BAR', 'Barbados')",BAR
+236,"('GBR', 'Ireland-2')",GBR
+237,"('ESP', 'Spain-2')",ESP
+238,"('GBS', 'Guinea Bissau')",GBS
+239,"('CAN', 'Mohawk Indians-2')",CAN
+240,"('SWE', 'Tornado')",SWE
+241,"('SWE', 'Elsie')",SWE
+242,"('ITA', 'Roma')",ITA
+243,"('ESP', 'Tajamar')",ESP
+244,"('ESP', 'Spain-1')",ESP
+245,"('GRE', 'Lemzos Thorichton ""Spetsai""-4')",GRE
+246,"('NOR', 'Norway-2')",NOR
+247,"('NOR', 'Norway-1')",NOR
+248,"('ITA', 'Italy-1')",ITA
+249,"('PUR', 'Puerto Rico-2')",PUR
+250,"('USA', 'Mound City Rowing Club-2')",USA
+251,"('TLS', 'Timor Leste')",TLS
+252,"('ESP', 'Amolgavar')",ESP
+253,"('COD', 'Congo (Kinshasa)')",COD
+254,"('GAB', 'Gabon')",GAB
+255,"('SWE', 'Ali-Baba II')",SWE
+256,"('SWE', 'May Be VII')",SWE
+257,"('GDR', 'East Germany-1')",GDR
+258,"('SMR', 'San Marino')",SMR
+259,"('GER', 'Favorite Hammonia-3')",GER
+260,"('LAO', 'Laos')",LAO
+261,"('BOT', 'Botswana')",BOT
+262,"('ROT', 'Refugee Olympic Athletes')",ROT
+263,"('GER', 'Frankfurt Club')",GER
+264,"('NOR', 'Lett')",NOR
+265,"('CAM', 'GyoshuII')",CAM
+266,"('PRK', 'North Korea')",PRK
+267,"('KOR', 'South Korea-2')",KOR
+268,"('BRA', 'Brazil-2')",BRA
+269,"('SOL', 'Solomon Islands')",SOL
+270,"('BEL', 'Dolfijn')",BEL
+271,"('GBR', 'Union des Socits Franais de Sports Athletiques')",GBR
+272,"('SEN', 'Senegal')",SEN
+273,"('CPV', 'Cape Verde')",CPV
+274,"('DEN', 'Tip')",DEN
+275,"('YUG', 'Yugoslavia-1')",YUG
+276,"('FIN', 'rn-2')",FIN
+277,"('CRT', 'Crete')",CRT
+278,"('AUT', 'Breslau')",AUT
+279,"('GER', 'Germany-3')",GER
+280,"('ROU', 'Romania-2')",ROU
+281,"('FRA', 'Club Nautique de Dieppe-5')",FRA
+282,"('NOR', 'Norna')",NOR
+283,"('NOR', 'Fram')",NOR
+284,"('NOR', 'Magda IX')",NOR
+285,"('URS', 'Soviet Union-3')",URS
+286,"('GEQ', 'Equatorial Guinea')",GEQ
+287,"('BOL', 'Bolivia')",BOL
+288,"('SAA', 'Saar')",SAA
+289,"('AND', 'Andorra')",AND
+290,"('JPN', 'Japan-2')",JPN
+291,"('AUT', 'Austria-1')",AUT
+292,"('AUT', 'Austria-2')",AUT
+293,"('ANT', 'Antigua and Barbuda')",ANT
+294,"('FRA', 'EA II')",FRA
+295,"('CAN', 'Canada-3')",CAN
+296,"('TCH', 'Czechoslovakia-3')",TCH
+297,"('THA', 'Linglom')",THA
+298,"('DEN', 'Denmark-2')",DEN
+299,"('NOR', 'Mosk II')",NOR
+300,"('LAT', 'Latvia-2')",LAT
+301,"('NOR', 'Elisabeth X')",NOR
+302,"('SWE', 'Sweden-3')",SWE
+303,"('GER', 'Ludwigshafener Ruderverein')",GER
+304,"('AUS', 'Australia-2')",AUS
+305,"('LAT', 'Latvia-1')",LAT
+306,"('FRA', 'Guyoni')",FRA
+307,"('GRE', 'Greece-1')",GRE
+308,"('GRE', 'Greece-2')",GRE
+309,"('FRG', 'West Germany-2')",FRG
+310,"('USA', 'La Salle Turnverein, Chicago')",USA
+311,"('USA', 'Gallant')",USA
+312,"('ZIM', 'Zimbabwe')",ZIM
+313,"('GRN', 'Grenada')",GRN
+314,"('GBR', 'Hera-1')",GBR
+315,"('SWE', 'Swedish Star')",SWE
+316,"('BUL', 'Bulgaria-1')",BUL
+317,"('GRE', 'Nautikos Omilos-3')",GRE
+318,"('GBR', 'Wolseley-Siddeley-1')",GBR
+319,"('HKG', 'Hong Kong')",HKG
+320,"('ITA', 'Ciocca II')",ITA
+321,"('ITA', 'Mirtala')",ITA
+322,"('LCA', 'Saint Lucia')",LCA
+323,"('FRA', 'Carabinier-5')",FRA
+324,"('FRA', 'Pettit-Poucet-6')",FRA
+325,"('FRA', 'Carabinier-15')",FRA
+326,"('FSM', 'Federated States of Micronesia')",FSM
+327,"('MYA', 'Myanmar')",MYA
+328,"('MON', 'Hirondelle')",MON
+329,"('SWE', 'Kerstin-1')",SWE
+330,"('AUT', 'Evita VI')",AUT
+331,"('UKR', 'Ukraine-2')",UKR
+332,"('RUS', 'Russia-3')",RUS
+333,"('MAW', 'Malawi')",MAW
+334,"('BLR', 'Belarus-1')",BLR
+335,"('USA', 'United States-3')",USA
+336,"('GER', 'Bronia')",GER
+337,"('ZAM', 'Zambia')",ZAM
+338,"('DEN', 'Denmark-1')",DEN
+339,"('GBR', 'Bluebottle')",GBR
+340,"('FRG', 'West Germany-1')",FRG
+341,"('RHO', 'Rhodesia')",RHO
+342,"('GDR', 'East Germany-2')",GDR
+343,"('DEN', 'Snap')",DEN
+344,"('TPE', 'Chinese Taipei-1')",TPE
+345,"('STP', 'Sao Tome and Principe')",STP
+346,"('CAN', 'Toronto Argonauts')",CAN
+347,"('GBR', 'England-1')",GBR
+348,"('HUN', 'Hungaria Evezos Egylet')",HUN
+349,"('POL', 'Poland-1')",POL
+350,"('MKD', 'Macedonia')",MKD
+351,"('BOH', 'Bohemia')",BOH
+352,"('CAN', 'Argonaut Rowing Club')",CAN
+353,"('GRE', 'Life boat naval ship ""Spetsai""-1')",GRE
+354,"('AUS', 'Australia-1')",AUS
+355,"('TGA', 'Tonga')",TGA
+356,"('NGR', 'Nigeria-1')",NGR
+357,"('GBR', 'Fortuna')",GBR
+358,"('GBR', 'Starlight III')",GBR
+359,"('LIE', 'Liechtenstein')",LIE
+360,"('NOR', 'Pan')",NOR
+361,"('MNE', 'Montenegro')",MNE
+362,"('GBR', 'Leander Club-2')",GBR
+363,"('GRE', 'Lemzos Thorichton ""Psara""-3')",GRE
+364,"('GBR', 'London City Police-1')",GBR
+365,"('GBR', 'Great Britain-3')",GBR
+366,"('GBR', 'Sabre')",GBR
+367,"('TTO', 'Firebird II')",TTO
+368,"('GER', 'Berliner Ruderverein von 1876-2')",GER
+369,"('USA', ""Christian Brothers' College-1"")",USA
+370,"('TCH', 'Czechoslovakia-1')",TCH
+371,"('TCH', 'Czechoslovakia-2')",TCH
+372,"('USA', 'Passaic Turnverein, Passaic')",USA
+373,"('YUG', 'Primorka')",YUG
+374,"('GAM', 'Gambia')",GAM
+375,"('FRA', 'Racing Club de France')",FRA
+376,"('POR', 'Grifo III')",POR
+377,"('POR', 'Grifo IV')",POR
+378,"('USA', 'Bingo')",USA
+379,"('MON', 'Damoiselle IV')",MON
+380,"('FRA', 'Crabe II-12')",FRA
+381,"('FRA', 'Nina Claire-30')",FRA
+382,"('FRA', 'Crabe II-1')",FRA
+383,"('FRA', 'Crabe II-4')",FRA
+384,"('FRA', 'Nina Claire-2')",FRA
+385,"('FRA', ""Qu'Importe"")",FRA
+386,"('YUG', 'Konstanz')",YUG
+387,"('BEL', 'Suzy-2')",BEL
+388,"('GBR', 'Mouchette-2')",GBR
+389,"('DEN', 'Dansk Idrts Forbund')",DEN
+390,"('TUR', 'Marmara')",TUR
+391,"('GBR', 'Moseley Wanderers')",GBR
+392,"('USA', 'Chicago Athletic Association-2')",USA
+393,"('GBR', 'Devon and Somerset Wanderers')",GBR
+394,"('EUN', 'Unified Team-2')",EUN
+395,"('GBR', 'Mistral Hojris')",GBR
+396,"('COK', 'Cook Islands')",COK
+397,"('MRI', 'Mauritius-2')",MRI
+398,"('ALB', 'Albania')",ALB
+399,"('ROU', 'Romania-1')",ROU
+400,"('ARG', 'Pampero')",ARG
+401,"('ISR', 'Israel-2')",ISR
+402,"('POR', 'Symphony')",POR
+403,"('POR', 'Sjhxa')",POR
+404,"('POR', 'Faneca')",POR
+405,"('POR', 'Ciocca III')",POR
+406,"('ITA', 'Marinai della nave da guerra ""Varese""')",ITA
+407,"('GBR', 'Lalage')",GBR
+408,"('RUS', 'Gallia II')",RUS
+409,"('GER', 'Dinah V')",GER
+410,"('CZE', 'Czech Republic-2')",CZE
+411,"('NOR', 'Nora')",NOR
+412,"('NOR', 'Monica')",NOR
+413,"('SWE', 'Kullan')",SWE
+414,"('RSA', 'Shoveller')",RSA
+415,"('GBR', 'Amateur Athletic Association')",GBR
+416,"('WIF', 'Circus')",WIF
+417,"('IRL', 'Aletta')",IRL
+418,"('USA', 'Widgeon')",USA
+419,"('BRA', 'Inca')",BRA
+420,"('CZE', 'Czech Republic-1')",CZE
+421,"('AUS', 'Relampago')",AUS
+422,"('GBR', 'Foxhunters Hurlingham')",GBR
+423,"('GBR', 'Thames Rowing Club')",GBR
+424,"('USA', 'Davenport Turngemeinde, Davenport')",USA
+425,"('USA', 'Norwegier Turnverein, Brooklyn')",USA
+426,"('SWE', 'Erna Signe')",SWE
+427,"('NOR', 'Sirene')",NOR
+428,"('FRA', 'Socit Nautique de Bayonne-2')",FRA
+429,"('FRA', 'Socit Nautique de Bayonne-1')",FRA
+430,"('DEN', 'Anitra')",DEN
+431,"('DEN', 'Snude')",DEN
+432,"('DEN', 'White Lady')",DEN
+433,"('DEN', 'Web II')",DEN
+434,"('DEN', 'Web III')",DEN
+435,"('ITA', 'Italy-3')",ITA
+436,"('ITA', 'Pistoja/Firenze')",ITA
+437,"('WIF', 'West Indies Federation')",WIF
+438,"('ESP', 'Posillipo III')",ESP
+439,"('FRA', 'Tritons Lillois-2')",FRA
+440,"('USA', 'Turnverein Vorwrts, Cleveland')",USA
+441,"('FRA', 'Club Nautique de Franais-1')",FRA
+442,"('MON', 'Monaco-1')",MON
+443,"('NED', 'Boreas-2')",NED
+444,"('RHO', 'Peri')",RHO
+445,"('USA', 'New York Turnverein, New York')",USA
+446,"('THA', 'Tichiboo')",THA
+447,"('THA', 'Siames-Cat')",THA
+448,"('SWZ', 'Swaziland')",SWZ
+449,"('IND', 'India-1')",IND
+450,"('ITA', 'Italia')",ITA
+451,"('ITA', 'Ausonia')",ITA
+452,"('USA', 'Angelita')",USA
+453,"('BUR', 'Burkina Faso')",BUR
+454,"('URU', 'Nortazo')",URU
+455,"('GER', 'Tom Kyle')",GER
+456,"('GER', 'Tilly')",GER
+457,"('FRA', 'Esterel-1')",FRA
+458,"('NBO', 'North Borneo')",NBO
+459,"('ARG', 'Wiking')",ARG
+460,"('AUS', 'Buraddoo')",AUS
+461,"('GBR', 'Heroine')",GBR
+462,"('BDI', 'Burundi')",BDI
+463,"('DEN', 'Chok')",DEN
+464,"('NOR', 'Atlanta')",NOR
+465,"('GER', 'Germania II')",GER
+466,"('GER', 'Wannsee')",GER
+467,"('DEN', 'Polyteknisk Roklub-1')",DEN
+468,"('ARU', 'Aruba')",ARU
+469,"('BRA', 'Buscape II')",BRA
+470,"('FIN', 'Nina')",FIN
+471,"('NOR', 'Norway-3')",NOR
+472,"('NOR', 'Kristiania Roklub-1')",NOR
+473,"('NOR', 'Kristiania Roklub')",NOR
+474,"('NOR', 'Ormsund Roklub-2')",NOR
+475,"('GBR', 'Chuckles')",GBR
+476,"('RSA', 'South Africa-2')",RSA
+477,"('TPE', 'Chinese Taipei')",TPE
+478,"('IRL', 'Ireland-2')",IRL
+479,"('CAN', 'Winnipeg Shamrocks-1')",CAN
+480,"('FRA', 'Olle')",FRA
+481,"('USA', 'United States-10')",USA
+482,"('POR', 'Camelia')",POR
+483,"('GER', 'Aschenbrodel')",GER
+484,"('FRA', 'Whitini Star')",FRA
+485,"('PUR', 'Puerto Rico-1')",PUR
+486,"('NOR', 'Bera')",NOR
+487,"('NED', 'Netherlands-2')",NED
+488,"('SWE', 'Slaghoken')",SWE
+489,"('SWE', 'Slaghoken II')",SWE
+490,"('GBR', 'Great Britain/Germany')",GBR
+491,"('GRE', 'Nikh')",GRE
+492,"('GBR', 'Swift')",GBR
+493,"('BRA', 'Andorinha')",BRA
+494,"('EUN', 'Unified Team-1')",EUN
+495,"('ARG', 'Cupidon III')",ARG
+496,"('GRE', 'Athens-2')",GRE
+497,"('BUL', 'Bulgaria-2')",BUL
+498,"('SWE', 'Marga-2')",SWE
+499,"('CAN', 'Serendipity')",CAN
+500,"('FRA', ""L'Aile VI"")",FRA
+501,"('FRA', ""Cercle de l'Aviron Roubaix-4"")",FRA
+502,"('CAN', 'Caprice')",CAN
+503,"('GBR', 'New College, Oxford-2')",GBR
+504,"('FRA', 'Compigne Polo Club')",FRA
+505,"('GBR', 'Vision')",GBR
+506,"('GBR', 'Cambridge University Boat Club-2')",GBR
+507,"('CAN', 'Trickson VI')",CAN
+508,"('USA', 'St. Rose-2')",USA
+509,"('POR', 'Calcinhas')",POR
+510,"('SWE', 'Gteborgs Roddfrening-2')",SWE
+511,"('NED', 'Minerva Amsterdam')",NED
+512,"('MEX', 'Chamukina')",MEX
+513,"('MEX', 'Nausikaa 4')",MEX
+514,"('USA', 'New York Athletic Club-1')",USA
+515,"('ARG', 'Arcturus')",ARG
+516,"('BEL', 'Belgium-1')",BEL
+517,"('USA', 'St. Louis Southwest Turnverein #1-2')",USA
+518,"('NRU', 'Nauru')",NRU
+519,"('NOR', 'Jo')",NOR
+520,"('GBR', 'Lucky Star')",GBR
+521,"('FRA', 'Namoussa')",FRA
+522,"('SWE', 'Briar')",SWE
+523,"('GRE', 'Panhellenios Gymnastikos Syllogos-1')",GRE
+524,"('NED', 'Netherlands-1')",NED
+525,"('AUS', 'Gabbiano')",AUS
+526,"('CAN', 'Gran Gesto')",CAN
+527,"('GBR', 'Ceres II')",GBR
+528,"('ARG', 'Covunco III')",ARG
+529,"('USA', 'Chicago Archers')",USA
+530,"('BEL', 'Royal Club Nautique de Gand')",BEL
+531,"('SWE', 'Roddklubben af 1912-1')",SWE
+532,"('SWE', 'Roddklubben af 1912-2')",SWE
+533,"('ITA', 'Bucintoro Venezia-1')",ITA
+534,"('ITA', 'Bucintoro Venezia')",ITA
+535,"('BEL', 'Edelweiss II-1')",BEL
+536,"('ITA', 'Bamba')",ITA
+537,"('USA', 'Rush IV')",USA
+538,"('USA', 'Boston Archers')",USA
+539,"('SUI', 'Ali-Baba II')",SUI
+540,"('SUI', 'Ali-Baba IV')",SUI
+541,"('SUI', 'Ali-Baba VI')",SUI
+542,"('SUI', 'Ali-Baba IX')",SUI
+543,"('GBR', 'Upton Park FC')",GBR
+544,"('GBR', 'BLO Polo Club, Rugby')",GBR
+545,"('GBR', 'Hurlingham-2')",GBR
+546,"('GBR', 'Leander Club-1')",GBR
+547,"('INA', 'Indonesia-2')",INA
+548,"('USA', 'Western Rowing Club-3')",USA
+549,"('FRA', 'Pigoule')",FRA
+550,"('VNM', 'South Vietnam')",VNM
+551,"('FRA', 'Snowten III')",FRA
+552,"('HUN', 'Hungaria')",HUN
+553,"('GBR', 'Libellule de Paris')",GBR
+554,"('CAN', 'Scram')",CAN
+555,"('ISV', 'United States Virgin Islands-2')",ISV
+556,"('ISV', 'United States Virgin Islands-1')",ISV
+557,"('NED', 'Amstel Amsterdam')",NED
+558,"('GBR', 'Scotland-3')",GBR
+559,"('ZIM', 'Peri II')",ZIM
+560,"('GBR', 'Liverpool Police Team-2')",GBR
+561,"('AUS', 'Vinha')",AUS
+562,"('SUI', 'Fantasio III')",SUI
+563,"('SUI', 'Pousse-Moi Pas VII')",SUI
+564,"('NOR', 'Norwegian Rowing Association')",NOR
+565,"('FRA', 'LaBandera')",FRA
+566,"('FRA', 'Gilliatt V')",FRA
+567,"('USA', 'United States Golf Association-3')",USA
+568,"('USA', 'Trans-Mississippi Golf Association-2')",USA
+569,"('CHN', 'China-2')",CHN
+570,"('CHN', 'China-1')",CHN
+571,"('FRA', 'Sarcelle-35')",FRA
+572,"('FRA', 'Sarcelle-3')",FRA
+573,"('ARG', 'Tango')",ARG
+574,"('ARG', 'Argentina-1')",ARG
+575,"('GBR', 'Brynhild-2')",GBR
+576,"('VEN', 'Espuma del Mar')",VEN
+577,"('ITA', 'Twins II')",ITA
+578,"('FRA', 'Pupilles de Neptune de Lille #2-1')",FRA
+579,"('CAN', 'Beaver')",CAN
+580,"('MON', 'Monaco-2')",MON
+581,"('SUI', 'Baccara')",SUI
+582,"('GBR', 'Cobweb-1')",GBR
+583,"('ESP', 'Ral-Club Barcelona')",ESP
+584,"('VIE', 'Vietnam')",VIE
+585,"('GER', 'Elvis Va')",GER
+586,"('ITA', 'Romolo')",ITA
+587,"('ITA', 'Aldebaran II')",ITA
+588,"('ITA', 'Aldebaran')",ITA
+589,"('POR', 'Argus')",POR
+590,"('ITA', 'Galatea II')",ITA
+591,"('ITA', 'Twins VIII')",ITA
+592,"('BEL', 'Antwerpia V')",BEL
+593,"('SWE', 'Lotta IV')",SWE
+594,"('SWE', 'Saga-2')",SWE
+595,"('SWE', 'Mari')",SWE
+596,"('AUS', 'Paula')",AUS
+597,"('NED', 'Oranje')",NED
+598,"('NED', 'Willem-Six')",NED
+599,"('NED', 'DeRuyter')",NED
+600,"('ARG', 'Acturus')",ARG
+601,"('FRA', 'Societ Nautique de la Marne')",FRA
+602,"('MEX', 'Mexico-2')",MEX
+603,"('FIN', 'Teresita')",FIN
+604,"('ITA', 'Barion/Bari-2')",ITA
+605,"('FRA', 'Eissero VI')",FRA
+606,"('USA', 'New York Athletic Club-4')",USA
+607,"('GBR', 'K Division Metropolitan Police Team-3')",GBR
+608,"('ISR', 'Israel-1')",ISR
+609,"('HKG', 'Hong Kong-1')",HKG
+610,"('MAS', 'Malaysia-1')",MAS
+611,"('CAM', 'Cambodia')",CAM
+612,"('USA', 'Complex II')",USA
+613,"('FRA', 'Allegro')",FRA
+614,"('FRA', 'Gam II')",FRA
+615,"('SUI', 'Ylliam VIII')",SUI
+616,"('FRA', 'Quand-Mme-33')",FRA
+617,"('FRA', 'Quand-Mme-2')",FRA
+618,"('USA', 'United States-9')",USA
+619,"('GER', 'Berliner Ruderclub Sport-Borussia-1')",GER
+620,"('GBR', 'Smyrna')",GBR
+621,"('TPE', 'Chinese Taipei-2')",TPE
+622,"('FRA', 'Calimucho')",FRA
+623,"('BHU', 'Bhutan')",BHU
+624,"('PRK', 'North Korea-1')",PRK
+625,"('MAS', 'Malaysia-2')",MAS
+626,"('MYA', 'Kingfisher')",MYA
+627,"('MYA', 'Yangon')",MYA
+628,"('GER', 'Gustel V')",GER
+629,"('NOR', 'Sonja II')",NOR
+630,"('DEN', 'Jill')",DEN
+631,"('DEN', 'Kiel')",DEN
+632,"('NOR', 'KNS')",NOR
+633,"('CAN', 'Galt Football Club')",CAN
+634,"('SUI', 'Tim-Tam III')",SUI
+635,"('URS', 'Uragan')",URS
+636,"('URS', 'Kon-Tiki')",URS
+637,"('USA', 'Babe')",USA
+638,"('POL', 'Poland-2')",POL
+639,"('ARG', 'Antares')",ARG
+640,"('ITA', 'Venilia')",ITA
+641,"('CUB', 'Hatuey')",CUB
+642,"('MRI', 'Mauritius-1')",MRI
+643,"('USA', 'Cincinnati Archers')",USA
+644,"('DEN', 'Morena')",DEN
+645,"('FRA', 'Libellule de Paris')",FRA
+646,"('FRA', 'Libellule de Paris-3')",FRA
+647,"('FRA', 'Societ Nautique de la Marne-3')",FRA
+648,"('GBR', 'Osborne Swimming Club, Manchester')",GBR
+649,"('BEL', 'Brussels Swimming and Water Polo Club')",BEL
+650,"('GBR', 'Ancora')",GBR
+651,"('GBR', 'Saskia')",GBR
+652,"('GBR', 'Wales-4')",GBR
+653,"('CAN', 'SagaII')",CAN
+654,"('BAH', 'Gem')",BAH
+655,"('SGP', 'June Climene')",SGP
+656,"('AUS', 'Cambria')",AUS
+657,"('BER', 'Oleander XII')",BER
+658,"('HKG', 'Phoenix')",HKG
+659,"('SUI', 'Ylliam VII')",SUI
+660,"('SUI', 'Ballerina IV')",SUI
+661,"('FRA', 'Chicago Athletic Association')",FRA
+662,"('FRA', 'Calypse II')",FRA
+663,"('GBR', 'Scotland')",GBR
+664,"('GBR', 'Scotland-2')",GBR
+665,"('ITA', 'Ciocca')",ITA
+666,"('ITA', 'Esperia')",ITA
+667,"('FRA', 'Tournade-40')",FRA
+668,"('FRA', 'Tornade-16')",FRA
+669,"('SWE', 'Galejan')",SWE
+670,"('GBR', 'Great Britain-4')",GBR
+671,"('CUB', 'Cuba-1')",CUB
+672,"('MHL', 'Marshall Islands')",MHL
+673,"('USA', 'United States-6')",USA
+674,"('CAN', 'Santa Maria')",CAN
+675,"('GBR', 'Dormy-1')",GBR
+676,"('ITA', 'Umberta V')",ITA
+677,"('FRA', 'Rozenn-3')",FRA
+678,"('NZL', 'Jest')",NZL
+679,"('GBR', 'Magdalen College Boat Club-1')",GBR
+680,"('USA', 'Western Golf Association-1')",USA
+681,"('GBR', 'Scotia')",GBR
+682,"('NZL', 'Red Dragon')",NZL
+683,"('AUT', 'R.-V. Germania, Leitmeritz')",AUT
+684,"('HUN', 'Hungary-1')",HUN
+685,"('IRL', 'Akatonbo')",IRL
+686,"('BRA', 'Terrible')",BRA
+687,"('NOR', 'Elisabeth V')",NOR
+688,"('NOR', 'Studenternes Roklub-2')",NOR
+689,"('FIN', 'Rififi')",FIN
+690,"('USA', 'New York Athletic Club #1-1')",USA
+691,"('INA', 'Partenope')",INA
+692,"('BER', 'Bermudes')",BER
+693,"('GBR', 'England')",GBR
+694,"('GBR', 'Cornwall')",GBR
+695,"('KIR', 'Kiribati')",KIR
+696,"('USA', 'United States-7')",USA
+697,"('AUS', 'Diablo')",AUS
+698,"('GBR', 'Beaver')",GBR
+699,"('FRA', 'Plume-patte-32')",FRA
+700,"('FRA', 'Plume-Patte-5')",FRA
+701,"('FRA', 'Pierre et Jean-3')",FRA
+702,"('FRA', 'Pierre et Jean-4')",FRA
+703,"('POR', 'Espadarte')",POR
+704,"('ESP', 'Fruits')",ESP
+705,"('BEL', 'Belgium-2')",BEL
+706,"('FRA', 'Sidi Fekkar-36')",FRA
+707,"('FRA', 'Sidi-Fekkar-14')",FRA
+708,"('FRA', 'Souvenance')",FRA
+709,"('BEL', 'Meteor')",BEL
+710,"('CUB', 'Kurush IV')",CUB
+711,"('CUB', 'Vesania')",CUB
+712,"('CUB', 'Kurush II')",CUB
+713,"('POR', 'Canopus')",POR
+714,"('FRA', 'Crabe I-11')",FRA
+715,"('FRA', 'Crabe I-3')",FRA
+716,"('FRA', 'Crabe I-2')",FRA
+717,"('FRA', 'Gwendoline-22')",FRA
+718,"('FRA', 'Gwendoline-2')",FRA
+719,"('USA', 'United States/France')",USA
+720,"('POR', 'Vicking')",POR
+721,"('NED', 'Daisy')",NED
+722,"('FRA', 'Virginie')",FRA
+723,"('MEX', 'Acipactli')",MEX
+724,"('BEL', 'Belgium-4')",BEL
+725,"('ITA', 'Pegaso')",ITA
+726,"('FRA', 'BLO Polo Club, Rugby')",FRA
+727,"('BEL', 'Girl Pat')",BEL
+728,"('FRA', 'Fada')",FRA
+729,"('BRA', 'Bu III')",BRA
+730,"('SUI', 'Lerina')",SUI
+731,"('FRA', 'Bagatelle Polo Club, Paris')",FRA
+732,"('NED', 'Bem II')",NED
+733,"('NED', 'St. Margrite')",NED
+734,"('NED', 'Hollandia')",NED
+735,"('USA', 'Aphrodite')",USA
+736,"('FRA', 'United States/France')",FRA
+737,"('DEN', 'Bonzo')",DEN
+738,"('FRA', 'Socit Nautique de la Basse Seine-1')",FRA
+739,"('FRA', 'Socit Nautique de la Basse Seine-2')",FRA
+740,"('BEL', 'Univ. of Brussels')",BEL
+741,"('USA', 'Concordia Turnverein, St Louis')",USA
+742,"('FRA', 'Rowing Club Castillon-3')",FRA
+743,"('FRA', 'Frip IV')",FRA
+744,"('CAN', 'Mad Dog')",CAN
+745,"('FRA', 'Hb-24')",FRA
+746,"('FRA', 'Hb-20')",FRA
+747,"('GER', 'South St Louis Turnverein, St Louis')",GER
+748,"('USA', 'Century Boat Club-1')",USA
+749,"('GBR', 'Unique')",GBR
+750,"('GRE', 'Pan-Hellenic Athletic Club')",GRE
+751,"('GRE', 'Phalainis ton Thorichtou ""Hydra""-2')",GRE
+752,"('NOR', 'Viking')",NOR
+753,"('NOR', 'Silja')",NOR
+754,"('BER', 'Bermudian')",BER
+755,"('CAN', 'Dresden')",CAN
+756,"('GBR', 'United States/Great Britain')",GBR
+757,"('FRA', 'Mignon-29')",FRA
+758,"('FRA', 'Mignon-3')",FRA
+759,"('FRA', 'Favorite-17')",FRA
+760,"('FRA', 'Favorite-1')",FRA
+761,"('USA', 'St. Louis Amateur Athletic Association')",USA
+762,"('AUS', 'Naiad')",AUS
+763,"('AUS', 'Pakaria')",AUS
+764,"('GBR', 'Ireland')",GBR
+765,"('GBR', 'Ireland-3')",GBR
+766,"('SRB', 'Serbia-2')",SRB
+767,"('USA', 'United States-14')",USA
+768,"('POR', 'Oxalis')",POR
+769,"('FRA', 'Gitana-21')",FRA
+770,"('FRA', 'Gitana-2')",FRA
+771,"('NED', 'Joy')",NED
+772,"('NED', 'Thalatta')",NED
+773,"('NED', 'Trintel II')",NED
+774,"('USA', 'Central Turnverein, Chicago')",USA
+775,"('FRA', 'Galopin-20')",FRA
+776,"('FRA', 'Galopin-9')",FRA
+777,"('FRA', 'France-4')",FRA
+778,"('GER', 'Berliner Ruderclub')",GER
+779,"('USA', 'Rhythm')",USA
+780,"('USA', 'Turnverein Vorwrts, Chicago')",USA
+781,"('BAH', 'Guanahani')",BAH
+782,"('UNK', 'Unknown')",UNK
+783,"('USA', 'Spirit III')",USA
+784,"('HUN', 'Pannonia RC/National RC')",HUN
+785,"('FIN', 'Bella')",FIN
+786,"('AUT', 'May-Be 1960')",AUT
+787,"('SWE', 'May Be')",SWE
+788,"('FIN', 'Inga-Lill XXXXIII')",FIN
+789,"('MEX', 'Mexico-1')",MEX
+790,"('GER', 'Nirwana')",GER
+791,"('GRE', 'Omilos Ereton Peiraios-2')",GRE
+792,"('USA', 'Llanoria')",USA
+793,"('NOR', 'Marmi II-1')",NOR
+794,"('SWE', 'Kitty-1')",SWE
+795,"('SWE', 'Vaxholm Roddklubb')",SWE
+796,"('TUV', 'Tuvalu')",TUV
+797,"('MEX', 'A North American Team')",MEX
+798,"('GRE', 'Nirefs')",GRE
+799,"('GRE', 'Proteus II')",GRE
+800,"('FIN', 'Finn II')",FIN
+801,"('RSA', 'Impala')",RSA
+802,"('USA', 'Missouri Athletic Club-3')",USA
+803,"('BER', 'Pam')",BER
+804,"('BER', 'Oleander II')",BER
+805,"('NOR', 'Apache')",NOR
+806,"('GBR', 'Olle')",GBR
+807,"('DEN', 'Roklubb Kbnhavn-2')",DEN
+808,"('FIN', 'Tu-Fri')",FIN
+809,"('EST', 'Tutti V')",EST
+810,"('YUG', 'Cha-Cha III')",YUG
+811,"('ITA', 'Augsburg')",ITA
+812,"('GBR', 'Leander Club #2-2')",GBR
+813,"('CAN', 'Ariel')",CAN
+814,"('NOR', 'Encore')",NOR
+815,"('GBR', 'Feo')",GBR
+816,"('USA', 'Seawanhaka Boat Club-1')",USA
+817,"('GBR', 'Gem II')",GBR
+818,"('BAH', 'Gem III')",BAH
+819,"('BAH', 'Gem IV')",BAH
+820,"('BAH', 'Gem VII')",BAH
+821,"('FRA', 'Pupilles de Neptune de Lille #1-3')",FRA
+822,"('FIN', 'Chaje II')",FIN
+823,"('GER', 'Ludwigshafener Ruder Verein-1')",GER
+824,"('GBR', 'Leander Club #1-1')",GBR
+825,"('GBR', 'Dylan-2')",GBR
+826,"('AUS', 'Moorina')",AUS
+827,"('AUT', '30. Februar')",AUT
+828,"('FRA', 'Cercle Nautique de Reims-4')",FRA
+829,"('CUB', 'Cuba-2')",CUB
+830,"('NOR', 'Struten')",NOR
+831,"('GBR', 'Gyrinus-1')",GBR
+832,"('SUI', 'Ylliam II')",SUI
+833,"('GDR', 'East Germany-3')",GDR
+834,"('GER', 'Paka V')",GER
+835,"('AUT', 'Brigantia')",AUT
+836,"('ANZ', 'Sydney Rowing Club')",ANZ
+837,"('POR', 'Espardate')",POR
+838,"('AUS', 'Australia/Great Britain')",AUS
+839,"('FRA', 'Kannibaltje')",FRA
+840,"('USA', 'Milwaukee Athletic Club-1')",USA
+841,"('FIN', 'Xantippa')",FIN
+842,"('DEN', 'Skum')",DEN
+843,"('DEN', 'Miss Denmark 1964')",DEN
+844,"('NED', 'Kemphaan')",NED
+845,"('FIN', 'Helsingfors R. K.')",FIN
+846,"('NFL', 'Newfoundland')",NFL
+847,"('GBR', 'Emily')",GBR
+848,"('NOR', 'Fram III')",NOR
+849,"('ARG', 'Mizar')",ARG
+850,"('BEL', 'Ubu')",BEL
+851,"('BEL', 'Lalage')",BEL
+852,"('USA', 'St. Louis Southwest Turnverein #2-3')",USA
+853,"('USA', 'Socialer Turnverein, Detroit')",USA
+854,"('BOH', 'Bohemia-1')",BOH
+855,"('JPN', 'Essen')",JPN
+856,"('JPN', 'Miss Nippon V')",JPN
+857,"('ITA', 'Argeste')",ITA
+858,"('ARG', 'Gullvinge')",ARG
+859,"('USA', 'United States-4')",USA
+860,"('KOR', 'South Korea-1')",KOR
+861,"('URU', 'Bajazzo')",URU
+862,"('FRA', 'Cinara-13')",FRA
+863,"('SWE', 'Ilderim')",SWE
+864,"('GER', 'Tantalus')",GER
+865,"('GRE', 'Peiraikos Syndesmos-2')",GRE
+866,"('FRA', 'Baby-9')",FRA
+867,"('FRA', 'Baby-1')",FRA
+868,"('FRA', 'Femur-18')",FRA
+869,"('FRA', 'Femur-1')",FRA
+870,"('GBR', 'Bagatelle Polo Club, Paris')",GBR
+871,"('FRA', 'Smyrna')",FRA
+872,"('KOS', 'Kosovo')",KOS
+873,"('FRA', 'Colette-10')",FRA
+874,"('FRA', 'Colette-12')",FRA
+875,"('USA', 'Germany/United States')",USA
+876,"('GER', 'Germania Ruder Club, Hamburg')",GER
+877,"('BEL', 'Freddy')",BEL
+878,"('SGP', 'Rika II')",SGP
+879,"('URS', 'Korshun')",URS
+880,"('HUN', 'Hungary-2')",HUN
+881,"('PHI', 'Patricia')",PHI
+882,"('MEX', 'Tlaloc')",MEX
+883,"('RSA', 'Springbok')",RSA
+884,"('ITA', 'Aretusa')",ITA
+885,"('GBR', 'Quicksilver-2')",GBR
+886,"('URS', 'Viktoriya')",URS
+887,"('GER', 'Germania Ruder Club, Hamburg-2')",GER
+888,"('GRE', 'Omilos Ereton Smyrnis')",GRE
+889,"('BLR', 'Belarus-2')",BLR
+890,"('POR', 'Alcaid')",POR
+891,"('FIN', 'Finland-1')",FIN
+892,"('FIN', 'Finland-2')",FIN
+893,"('SUI', 'Alain IV')",SUI
+894,"('USA', 'Jupiter')",USA
+895,"('IRL', 'Three Leaves')",IRL
+896,"('USA', 'Philadelphia Turngemeinde, Philadelphia')",USA
+897,"('SWE', 'K.S.S.S. 1912-2')",SWE
+898,"('EUN', 'Unified Team-3')",EUN
+899,"('GBR', 'Paka')",GBR
+900,"('FIN', 'Sheerio')",FIN
+901,"('NOR', 'Pan II')",NOR
+902,"('ESP', 'Pasodoble')",ESP
+903,"('SWE', 'Freja')",SWE
+904,"('IND', 'India-2')",IND
+905,"('SWE', 'Sass-2')",SWE
+906,"('JPN', 'Roy')",JPN
+907,"('UKR', 'Ukraine-1')",UKR
+908,"('GER', 'Deutscher Schwimm Verband Berlin')",GER
+909,"('CAN', 'Jet')",CAN
+910,"('BEL', 'Belgium-3')",BEL
+911,"('USA', 'Shrew II')",USA
+912,"('SWE', 'Sylvia')",SWE
+913,"('GBR', 'Salamander')",GBR
+914,"('DEN', 'Denmark-3')",DEN
+915,"('SWE', 'Ingegerd')",SWE
+916,"('SVK', 'Slovakia-2')",SVK
+917,"('GBR', 'Johan')",GBR
+918,"('GER', 'Germany/United States')",GER
+919,"('JAM', 'Jamaica-2')",JAM
+920,"('GBR', 'Andromeda')",GBR
+921,"('AUS', 'Hornet')",AUS
+922,"('SSD', 'South Sudan')",SSD
+923,"('USA', 'Chicago Athletic Association')",USA
+924,"('SWE', 'Sweden-4')",SWE
+925,"('SWE', 'Chance')",SWE
+926,"('GBR', 'Brat')",GBR
+927,"('RSA', 'Yeoman V')",RSA
+928,"('HUN', 'Knigsberg')",HUN
+929,"('DEN', 'Don Schufro')",DEN
+930,"('SWE', 'Vinga-1')",SWE
+931,"('SWE', 'Aloha II')",SWE
+932,"('FIN', 'Raili')",FIN
+933,"('CAN', 'Syndi')",CAN
+934,"('BRA', 'Vento Sul')",BRA
+935,"('SWE', 'Sans Atout-1')",SWE
+936,"('JAM', 'Miss Nippon IV')",JAM
+937,"('HAI', 'Union des Socits Franais de Sports Athletiques')",HAI
+938,"('COL', 'Racing Club de France')",COL
+939,"('NZL', 'New Zealand-1')",NZL
+940,"('FRA', 'Tramontane')",FRA
+941,"('GER', 'Turnverein Vorwrts, Chicago')",GER
+942,"('FRA', 'Sandra')",FRA
+943,"('USA', 'Milwaukee Turnverein, Milwaukee')",USA
+944,"('DEN', 'Nurdug II')",DEN
+945,"('NOR', 'Eleda')",NOR
+946,"('BRA', 'Lbeck')",BRA
+947,"('BAH', 'Yeoman')",BAH
+948,"('RSA', 'Boer Team')",RSA
+949,"('NED', 'Beatrijs III-1')",NED
+950,"('GBR', 'Lancet')",GBR
+951,"('FIN', 'Vinha')",FIN
+952,"('FRG', 'West Germany-3')",FRG
+953,"('LES', 'Lesotho')",LES
+954,"('USA', 'Ravenswood Boat Club-2')",USA
+955,"('JPN', 'Whisper')",JPN
+956,"('NOR', 'Irene')",NOR
+957,"('HUN', 'Balaton')",HUN
+958,"('SWE', 'Kuling')",SWE
+959,"('SWE', 'Sif')",SWE
+960,"('ARG', 'Djinn')",ARG
+961,"('NED', 'Mascotte')",NED
+962,"('GBR', 'Bona Fide')",GBR
+963,"('GBR', 'Laurea-1')",GBR
+964,"('USA', 'Skidoo')",USA
+965,"('BEL', 'Pupilles de Neptune de Lille #1-3')",BEL
+966,"('CAN', 'Tomahawk II')",CAN
+967,"('GER', 'Pan')",GER
+968,"('CAN', 'Whirlaway')",CAN
+969,"('GBR', 'Sorais-2')",GBR
+970,"('USA', 'Minotaur')",USA
+971,"('USA', 'United States-5')",USA
+972,"('AUT', 'Surprise')",AUT
+973,"('BEL', 'Zut')",BEL
+974,"('BEL', 'Tan-Fe-Pah')",BEL
+975,"('BEL', 'Ciss')",BEL
+976,"('AUS', 'Australia-3')",AUS
+977,"('BOH', 'Bohemia-3')",BOH
+978,"('FIN', 'Lucky Star')",FIN
+979,"('JPN', 'Boreas')",JPN
+980,"('JPN', 'MitaII')",JPN
+981,"('BRA', 'Escapade')",BRA
+982,"('GBR', 'Joy')",GBR
+983,"('SVK', 'Slovakia-1')",SVK
+984,"('FIN', 'Ralia')",FIN
+985,"('DEN', 'Clearwater')",DEN
+986,"('USA', 'Angerburg')",USA
+987,"('SGP', 'Singapore-2')",SGP
+988,"('USA', 'United States-8')",USA
+989,"('USA', 'United States/Great Britain')",USA
+990,"('NED', 'Barco Deloro')",NED
+991,"('FRA', 'Dick-8')",FRA
+992,"('YUG', 'Yugoslavia-2')",YUG
+993,"('PHI', 'Kalayaan')",PHI
+994,"('BOH', 'Bohemia-2')",BOH
+995,"('HUN', 'Olimpia')",HUN
+996,"('GER', 'Macky VI')",GER
+997,"('NED', 'Nrnberg')",NED
+998,"('GRE', 'Nephos I')",GRE
+999,"('INA', 'Tengiri')",INA
+1000,"('SWE', 'Hayama')",SWE
+1001,"('SWE', 'Rush VII')",SWE
+1002,"('SWE', 'Rush V')",SWE
+1003,"('GRE', 'Ethnikos Gymnastikos Syllogos')",GRE
+1004,"('USA', 'Foxhunters Hurlingham')",USA
+1005,"('BAH', 'John B')",BAH
+1006,"('BAH', 'Bim')",BAH
+1007,"('GER', 'Bonaparte')",GER
+1008,"('PRK', 'North Korea-2')",PRK
+1009,"('USA', 'Mythilus')",USA
+1010,"('JPN', 'Rambo')",JPN
+1011,"('SWE', 'Floresco')",SWE
+1012,"('HKG', 'Hong Kong-2')",HKG
+1013,"('LUX', 'Luxembourg-2')",LUX
+1014,"('NOR', 'Lucky')",NOR
+1015,"('USA', 'Spirit VI')",USA
+1016,"('NOR', 'Lully II')",NOR
+1017,"('NOR', 'Sildra-1')",NOR
+1018,"('NOR', 'Noreg')",NOR
+1019,"('GER', 'Subbnboana')",GER
+1020,"('GRE', 'Phalainis ton Thorichtou ""Psara""-3')",GRE
+1021,"('SLO', 'Slovenia-1')",SLO
+1022,"('GER', 'Rostock')",GER
+1023,"('GER', 'St. Louis Southwest Turnverein #2-3')",GER
+1024,"('RUS', 'Norman-1')",RUS
+1025,"('GRE', 'Olympion')",GRE
+1026,"('USA', 'South St Louis Turnverein, St Louis')",USA
+1027,"('SWE', 'Sunshine')",SWE
+1028,"('URU', 'Heidelberg')",URU
+1029,"('FRA', 'Amulet-7')",FRA
+1030,"('FRA', 'Amulet-3')",FRA
+1031,"('GRE', 'Omas Helliniki P. S.')",GRE
+1032,"('FRA', 'Crocodile-13')",FRA
+1033,"('FRA', 'Crocodile-11')",FRA
+1034,"('FRA', 'Leipzig')",FRA
+1035,"('FRA', 'Red Indian')",FRA
+1036,"('FRA', 'Alcyon-6')",FRA
+1037,"('FRA', 'Alcyon-7')",FRA
+1038,"('FRA', 'Suzon IV-39')",FRA
+1039,"('FRA', 'Suzon IV-5')",FRA
+1040,"('AUT', 'Philadelphia Turngemeinde, Philadelphia')",AUT
+1041,"('FRA', 'Mascaret-28')",FRA
+1042,"('FRA', 'Mascaret-4')",FRA
+1043,"('POL', 'Poland-3')",POL
+1044,"('GBR', 'Sibindi-2')",GBR
+1045,"('FRA', 'Pupilles de Neptune de Lille-1')",FRA
+1046,"('BAH', 'Combine')",BAH
+1047,"('NZL', 'Osborne Swimming Club, Manchester')",NZL
+1048,"('FRA', 'Aloha II')",FRA
+1049,"('FRA', 'Stade Franais AC-2')",FRA
+1050,"('USA', 'Kathleen')",USA
+1051,"('FRA', 'Club Nautique de Lyon-2')",FRA
+1052,"('NED', 'Holland')",NED
+1053,"('NED', 'Starita')",NED
+1054,"('USA', 'United States-12')",USA
+1055,"('CAN', 'Argo II')",CAN
+1056,"('CAN', 'State VI')",CAN
+1057,"('USA', 'Frimousse')",USA
+1058,"('DEN', 'Denmark-4')",DEN
+1059,"('POR', 'Portugal-2')",POR
+1060,"('GBR', 'France/Great Britain')",GBR
+1061,"('FRA', 'Gyp-23')",FRA
+1062,"('FRA', 'Gyp-6')",FRA
+1063,"('GRE', 'Zefyros')",GRE
+1064,"('FRA', 'Pirouette-31')",FRA
+1065,"('FRA', 'Pirouette-5')",FRA
+1066,"('FRA', 'Societ Nautique de la Marne-1')",FRA
+1067,"('ITA', 'Mebi')",ITA
+1068,"('SLO', 'Slovenia-2')",SLO
+1069,"('JPN', 'Riccar')",JPN
+1070,"('JPN', 'Japan-3')",JPN
+1071,"('FIN', 'Lynn')",FIN
+1072,"('URS', 'Neptun II')",URS
+1073,"('USA', 'Potomac Archers')",USA
+1074,"('IRL', 'Ireland-1')",IRL
+1075,"('USA', 'BLO Polo Club, Rugby')",USA
+1076,"('USA', 'Brentina')",USA
+1077,"('GBR', 'Nan-2')",GBR
+1078,"('POR', 'Hannover')",POR
+1079,"('FRA', 'Scamasaxe-34')",FRA
+1080,"('FRA', 'Scamasaxe-2')",FRA
+1081,"('FRA', 'Scamasaxe-3')",FRA
+1082,"('USA', 'Three Star Too')",USA
+1083,"('GER', 'Bellatrix IX')",GER
+1084,"('GER', 'Bellatrix XIII')",GER
+1085,"('FRA', 'Jeanette-25')",FRA
+1086,"('FRA', 'Jeannette-18')",FRA
+1087,"('FRA', 'Turquoise-1')",FRA
+1088,"('FRA', 'Turquoise-3')",FRA
+1089,"('GBR', 'Roehampton-1')",GBR
+1090,"('CAN', 'Glisten')",CAN
+1091,"('NED', 'Nadine')",NED
+1092,"('ITA', 'Grifone')",ITA
+1093,"('ESP', 'Canopus')",ESP
+1094,"('GBR', 'Twinkle')",GBR
+1095,"('JPN', 'Myojo')",JPN
+1096,"('FRA', 'Ducky-16')",FRA
+1097,"('FRA', 'Ducky-4')",FRA
+1098,"('FRA', 'Rose Pompon')",FRA
+1099,"('FRA', 'Souriceau-38')",FRA
+1100,"('FRA', 'Souriceau-4')",FRA
+1101,"('USA', 'United States-11')",USA
+1102,"('GBR', 'Lady C')",GBR
+1103,"('USA', 'Frieda')",USA
+1104,"('FRA', 'Marsouin-26')",FRA
+1105,"('FRA', 'Marsouin-8')",FRA
+1106,"('URS', 'Persey')",URS
+1107,"('DEN', 'Hi-Hi')",DEN
+1108,"('USA', 'Atalanta Boat Club-1')",USA
+1109,"('USA', 'Atalanta Boat Club-2')",USA
+1110,"('GER', 'Wendehals')",GER
+1111,"('USA', 'New York Athletic Club')",USA
+1112,"('GBR', 'Titia')",GBR
+1113,"('BRA', 'Pimm')",BRA
+1114,"('GER', 'Gustel X')",GER
+1115,"('GER', 'Gustl XI')",GER
+1116,"('THA', 'Thailand-1')",THA
+1117,"('CAN', 'Pop Art')",CAN
+1118,"('NOR', 'Norwegier Turnverein, Brooklyn')",NOR
+1119,"('SWE', 'Denmark/Sweden')",SWE
+1120,"('AUS', 'Barrenjoey')",AUS
+1121,"('RSA', 'South Africa-1')",RSA
+1122,"('ITA', 'Voloira II')",ITA
+1123,"('UZB', 'Uzbekistan-2')",UZB
+1124,"('FIN', 'Bremen')",FIN
+1125,"('AUS', 'Quando Quando')",AUS
+1126,"('AUT', 'Donar III')",AUT
+1127,"('SWE', 'Hojwa')",SWE
+1128,"('USA', 'Tineke')",USA
+1129,"('POL', 'Danuta')",POL
+1130,"('AUS', 'Maryke')",AUS
+1131,"('AUS', 'Falcon VI')",AUS
+1132,"('THA', 'Thailand-2')",THA
+1133,"('CAN', 'Manana')",CAN
+1134,"('NZL', 'Pandora')",NZL
+1135,"('ARG', 'Rampage')",ARG
+1136,"('FRA', 'Diabolo St Maurice')",FRA
+1137,"('USA', 'Ravel')",USA
+1138,"('SWE', 'Humbug V')",SWE
+1139,"('FRA', 'Astrid III')",FRA
+1140,"('SUI', 'Kln')",SUI
+1141,"('FRA', 'Demi-Mondaine-15')",FRA
+1142,"('FRA', 'Demi-Mondaine-17')",FRA
+1143,"('URS', 'Nokaut II')",URS
+1144,"('URS', 'Almaz')",URS
+1145,"('URS', 'Tulilind')",URS
+1146,"('URS', 'Tornado')",URS
+1147,"('URS', 'Taifun')",URS
+1148,"('NZL', 'New Zealand-2')",NZL
+1149,"('POR', 'Notavel')",POR
+1150,"('POR', 'Galopin De La Font')",POR
+1151,"('USA', 'Margaret')",USA
+1152,"('POR', 'Portugal-1')",POR
+1153,"('FRA', 'France/Great Britain')",FRA
+1154,"('USA', 'Comanche')",USA
+1155,"('GRE', 'Royal Club Nautique de Gand')",GRE
+1156,"('GBR', 'Cicely-1')",GBR
+1157,"('POR', ""Ma'Lindo"")",POR
+1158,"('NZL', 'Harmony')",NZL
+1159,"('USA', 'Independent Rowing Club-3')",USA
+1160,"('GRE', 'Marie-Tim')",GRE
+1161,"('UZB', 'Uzbekistan-1')",UZB
+1162,"('CAN', 'Orion')",CAN
+1163,"('MLT', 'Merope')",MLT
+1164,"('GBR', 'Australia/Great Britain')",GBR
+1165,"('CAN', 'Scaup')",CAN
+1166,"('ITA', 'Legionario')",ITA
+1167,"('ITA', 'Merope')",ITA
+1168,"('ITA', 'Merope III')",ITA
+1169,"('ITA', 'Enotria')",ITA
+1170,"('FRA', 'Verveine-41')",FRA
+1171,"('FRA', 'Verveine-19')",FRA
+1172,"('USA', 'Union des Socits Franais de Sports Athletiques')",USA
+1173,"('BOH', 'Bohemia/Great Britain')",BOH
+1174,"('FRA', 'Ariette-8')",FRA
+1175,"('FRA', 'Ariette-10')",FRA
+1176,"('AUS', 'Amateur Athletic Association')",AUS
+1177,"('AUS', 'Greenoaks Dundee')",AUS
+1178,"('FRA', 'Fantlet-2')",FRA
+1179,"('FRA', 'Fantlet-7')",FRA
+1180,"('LIB', 'Maid of Lebanon')",LIB
+1181,"('JPN', 'Danaldo')",JPN
+1182,"('NOR', 'Lyn-2')",NOR
+1183,"('NED', 'Sunrise')",NED
+1184,"('AUS', 'Falcon IV')",AUS
+1185,"('GBR', 'Potsdam')",GBR
+1186,"('FRA', 'Giselle-6')",FRA
+1187,"('USA', 'United States-13')",USA
+1188,"('CHN', 'China-3')",CHN
+1189,"('ARG', 'Ardilla')",ARG
+1190,"('GRE', 'Greece-4')",GRE
+1191,"('CAN', 'Windor')",CAN
+1192,"('USA', 'Vim III')",USA
+1193,"('SWE', 'Lasha')",SWE
+1194,"('USA', 'Hilarius')",USA
+1195,"('RSA', 'Hakahana')",RSA
+1196,"('USA', 'Glider')",USA
+1197,"('JAM', 'Jamaica-1')",JAM
+1198,"('FIN', 'Squid III')",FIN
+1199,"('SGP', 'Singapore-1')",SGP
+1200,"('FRA', 'Mamie-4')",FRA
+1201,"('FRA', 'C.V.A.-14')",FRA
+1202,"('FRA', 'Singy-37')",FRA
+1203,"('FRA', 'C.V.A.-7')",FRA
+1204,"('FRA', 'Mamie-6')",FRA
+1205,"('FRA', 'Singy-7')",FRA
+1206,"('GBR', 'Univ. of Brussels')",GBR
+1207,"('NOR', 'Hamburg')",NOR
+1208,"('FRA', 'Mac Miche')",FRA
+1209,"('FRA', 'Camille')",FRA
+1210,"('SRB', 'Serbia-1')",SRB
+1211,"('GER', 'Great Britain/Germany')",GER
+1212,"('TUR', 'Cuxhaven')",TUR
+1213,"('USA', 'Formosa')",USA
+1214,"('BEL', 'Danzig')",BEL
+1215,"('NED', 'Salinero')",NED
+1216,"('NED', 'Univ. of Brussels')",NED
+1217,"('SWE', 'Sjovinge')",SWE
+1218,"('EST', 'Brandenburg')",EST
+1219,"('HUN', 'Hungary-3')",HUN
+1220,"('GBR', 'Bohemia/Great Britain')",GBR
+1221,"('FRA', 'Freia-19')",FRA
+1222,"('FRA', 'Freia-5')",FRA
+1223,"('LUX', 'Luxembourg-1')",LUX
+1224,"('GER', 'Satchmo')",GER
+1225,"('GBR', 'Sea Dog-2')",GBR
+1226,"('GBR', 'Omilos Ereton Smyrnis')",GBR
+1227,"('CHI', 'Mainz')",CHI
+1228,"('SWE', 'Solos Carex')",SWE
+1229,"('USA', 'A North American Team')",USA
+1230,"('JPN', 'Dow Jones')",JPN
+1231,"('DEN', 'Digby')",DEN
